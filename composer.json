@@ -16,9 +16,6 @@
     }
   ],
   "require": {
-    "php": ">=7.0"
-  },
-  "require": {
     "php": ">=7.0",
     "objective-php/components": "dev-master",
     "objective-php/services-factory": "dev-master",

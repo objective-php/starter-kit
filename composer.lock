@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b935b4617f41d069e204beffc5ea6efc",
-    "content-hash": "e04c6ede7c9f92ccff5858e882d55f9c",
+    "hash": "7f988efd76f35bdd859ccbe3182627b6",
+    "content-hash": "3c30346d23f243e63854e66a7c63ae4b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -77,16 +77,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e"
+                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
-                "reference": "2b9cec5a5e722010cbebc91713d4c11eaa064d5e",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/47c7128262da274f590ae6f86eb137a7a64e82af",
+                "reference": "47c7128262da274f590ae6f86eb137a7a64e82af",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-11-02 18:35:48"
+            "time": "2015-12-03 10:50:37"
         },
         {
             "name": "doctrine/collections",
@@ -213,16 +213,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9"
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/0009b8f0d4a917aabc971fb089eba80e872f83f9",
-                "reference": "0009b8f0d4a917aabc971fb089eba80e872f83f9",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
+                "reference": "311001fd9865a4d0d59efff4eac6d7dcb3f5270c",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -282,7 +282,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2015-08-31 13:00:22"
+            "time": "2015-12-04 12:49:42"
         },
         {
             "name": "doctrine/dbal",
@@ -696,12 +696,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "525177191cd7c5a5fef474a1f6edcfa24d0a7317"
+                "reference": "7ffa0046060143c6b96ce24191be08ab9852c96f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/47270c0ca27ada5ce365906a9ef4df36bf690534",
-                "reference": "525177191cd7c5a5fef474a1f6edcfa24d0a7317",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/7ffa0046060143c6b96ce24191be08ab9852c96f",
+                "reference": "7ffa0046060143c6b96ce24191be08ab9852c96f",
                 "shasum": ""
             },
             "require": {
@@ -737,7 +737,7 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2015-11-28 14:19:56"
+            "time": "2015-12-08 22:02:10"
         },
         {
             "name": "objective-php/components",
@@ -745,12 +745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/components.git",
-                "reference": "089404b5e7fcea1da39808a656d74e90cd96b694"
+                "reference": "82084846935940a0833627f0904eefc2eca111ed"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/objective-php/components/zipball/82084846935940a0833627f0904eefc2eca111ed",
-                "reference": "089404b5e7fcea1da39808a656d74e90cd96b694",
+                "reference": "82084846935940a0833627f0904eefc2eca111ed",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2015-11-28 13:59:55"
+            "time": "2015-12-07 08:18:37"
         },
         {
             "name": "objective-php/doctrine-package",
@@ -801,12 +801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/doctrine-package.git",
-                "reference": "748202465fea073159b5b7064ce4367d7f208769"
+                "reference": "dfdd782c1954756184f142703e79b96822010819"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/881bbe0f2a11571d4bc2eb002e12a36600a90840",
-                "reference": "748202465fea073159b5b7064ce4367d7f208769",
+                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/dfdd782c1954756184f142703e79b96822010819",
+                "reference": "dfdd782c1954756184f142703e79b96822010819",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +847,7 @@
                 "doctrine",
                 "objective php"
             ],
-            "time": "2015-11-27 11:29:40"
+            "time": "2015-12-08 21:41:36"
         },
         {
             "name": "objective-php/events-handler",
@@ -950,12 +950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/message.git",
-                "reference": "9de71bf462e40366edf1a05b12b7f7abb13745af"
+                "reference": "a276efe80bc322ef44493e391653cfc6393a1739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/message/zipball/9de71bf462e40366edf1a05b12b7f7abb13745af",
-                "reference": "9de71bf462e40366edf1a05b12b7f7abb13745af",
+                "url": "https://api.github.com/repos/objective-php/message/zipball/a276efe80bc322ef44493e391653cfc6393a1739",
+                "reference": "a276efe80bc322ef44493e391653cfc6393a1739",
                 "shasum": ""
             },
             "require": {
@@ -983,7 +983,7 @@
                 }
             ],
             "description": "ObjectivePHP implementation for PSR-7",
-            "time": "2015-11-27 11:13:50"
+            "time": "2015-12-08 21:42:39"
         },
         {
             "name": "objective-php/services-factory",
@@ -991,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "04e7c811b6a5bdd4a62603d88716bb11d1b16055"
+                "reference": "3f5db328f6172173694fdfc0b9bf3937889af380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/04e7c811b6a5bdd4a62603d88716bb11d1b16055",
-                "reference": "04e7c811b6a5bdd4a62603d88716bb11d1b16055",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/3f5db328f6172173694fdfc0b9bf3937889af380",
+                "reference": "3f5db328f6172173694fdfc0b9bf3937889af380",
                 "shasum": ""
             },
             "require": {
@@ -1031,58 +1031,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2015-11-27 11:25:24"
-        },
-        {
-            "name": "php-console/php-console",
-            "version": "3.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barbushin/php-console.git",
-                "reference": "50236f71d80f983d232683d5d61ba1994d40c3de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barbushin/php-console/zipball/50236f71d80f983d232683d5d61ba1994d40c3de",
-                "reference": "50236f71d80f983d232683d5d61ba1994d40c3de",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "PhpConsole": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD 3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sergey Barbushin",
-                    "email": "barbushin@gmail.com",
-                    "homepage": "http://linkedin.com/in/barbushin"
-                }
-            ],
-            "description": "Server side PHP library for Google Chrome extension \"PHP Console\".",
-            "homepage": "https://github.com/barbushin/php-console",
-            "keywords": [
-                "chrome",
-                "debug",
-                "error handler",
-                "errors",
-                "google chrome",
-                "php"
-            ],
-            "time": "2015-10-29 01:31:31"
+            "time": "2015-12-08 22:09:20"
         },
         {
             "name": "psr/http-message",
@@ -1135,25 +1084,26 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.7",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
+                "reference": "175871ca8d1ef16ff8d8cac395a1c73afa8d0e63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
+                "url": "https://api.github.com/repos/symfony/console/zipball/175871ca8d1ef16ff8d8cac395a1c73afa8d0e63",
+                "reference": "175871ca8d1ef16ff8d8cac395a1c73afa8d0e63",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1",
-                "symfony/process": "~2.1"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -1163,7 +1113,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1190,7 +1140,63 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-18 09:54:26"
+            "time": "2015-11-30 12:36:17"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0b6a8940385311a24e060ec1fe35680e17c74497",
+                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2015-11-04 20:28:58"
         },
         {
             "name": "twbs/bootstrap",
