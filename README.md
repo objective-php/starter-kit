@@ -10,16 +10,18 @@ This is where to start your own Objective PHP project.
 
 A few simple steps are needed to get this application up and running:
 
-```
-git clone https://github.com/objective-php/starter-kit
-cd showcase
-
 # the next step assumes that composer is available in your PATH
-composer install
-php -S 0.0.0.0:8001 -t public 
+
+```
+# install the project and its dependencies
+composer create-project -s dev objective-php/starter-kit [project-name]
+cd [project-name]
+
+# run a local web server
+php -S localhost:8001 -t public 
 ```
 
-You can then open http://localhost:8001 to access live demo of Objective PHP Framework. Note that the frmaework will show itself much more efficient when using a production grade web server (as Apache or Nginx), while the PHP built-in server will allow you to make the demo running within seconds.
+You can then open http://localhost:8001 to access your brand new project. Note that the framework will show itself much more efficient when using a production grade web server (as Apache or Nginx), while the PHP built-in server will allow you to make the starter kit running within seconds.
 
 
 
