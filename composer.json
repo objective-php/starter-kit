@@ -1,22 +1,38 @@
 {
-   	"require": {
-            "php": ">=7.0",
-     		"objective-php/components": "dev-master",
-     		"objective-php/services-factory": "dev-master",
-     		"objective-php/events-handler": "dev-master",
-     		"objective-php/message": "dev-master",
-     		"objective-php/application": "dev-master",
-     		"objective-php/doctrine-package": "dev-master",
-            "doctrine/orm": ">=2.5",
-	  		"objective-php/html": "dev-master",
-   	   		"twbs/bootstrap": "^3.3",
-            "php-console/php-console": "^3.1"
-	},
-   	"autoload":
-	{
-	  	"psr-4":
-		{
-		  "Project\\": "app/src"
-		}
-	}
+  "name": "objective-php/starter-kit",
+  "description": "Objective PHP Project Template",
+  "type": "skeleton",
+  "keywords": [
+    "skeleton",
+    "objective php"
+  ],
+  "homepage": "https://github.com/objective-php/starter-kit",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Gauthier 'Rusty' Delamarre",
+      "email": "gauthier@objective-php.org",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require": {
+    "php": ">=7.0",
+    "objective-php/components": "dev-master",
+    "objective-php/services-factory": "dev-master",
+    "objective-php/events-handler": "dev-master",
+    "objective-php/message": "dev-master",
+    "objective-php/application": "dev-master",
+    "objective-php/doctrine-package": "dev-master",
+    "doctrine/orm": ">=2.5",
+    "objective-php/html": "dev-master",
+    "twbs/bootstrap": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Project\\": "app/src"
+    }
+  }
 }
