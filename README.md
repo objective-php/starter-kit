@@ -10,7 +10,7 @@ This is where to start your own Objective PHP project.
 
 A few simple steps are needed to get this application up and running:
 
-# the next step assumes that composer is available in your PATH
+### The next step assumes that composer is available in your PATH
 
 ```
 # install the project and its dependencies
