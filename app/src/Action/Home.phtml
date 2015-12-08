@@ -1,0 +1,25 @@
+<?php
+    // change layout
+    use ObjectivePHP\Html\Tag\Tag;
+
+    $this->getApplication()->getConfig()->layouts->layout = 'home';
+?>
+
+
+<?php
+
+    /*
+     * Tag helper calls below will produce this html code:
+     *
+     * <div class="page-header">
+     *      <h1>What will you find here?</h1>
+     *  </div>
+     */
+
+    Tag::div(Tag::h1('And now?'), 'page-header');
+
+
+
+    Tag::p('This project provides developers with a pre-configured project template. Once installed, you should start working on your own application!');
+    Tag::p('Given we do not provide you with much documentation... well, we actually have no documentation at all, so you\'re encouraged to read these examples source code, as well as Objective PHP components source.');
+    Tag::p('You can also take a look at the objective-php/showcase package, on which this starter kit is based, but which contains some more Objective PHP gadgets demos.');

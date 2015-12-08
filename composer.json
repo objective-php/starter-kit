@@ -1,0 +1,22 @@
+{
+   	"require": {
+            "php": ">=7.0",
+     		"objective-php/components": "dev-master",
+     		"objective-php/services-factory": "dev-master",
+     		"objective-php/events-handler": "dev-master",
+     		"objective-php/message": "dev-master",
+     		"objective-php/application": "dev-master",
+     		"objective-php/doctrine-package": "dev-master",
+            "doctrine/orm": ">=2.5",
+	  		"objective-php/html": "dev-master",
+   	   		"twbs/bootstrap": "^3.3",
+            "php-console/php-console": "^3.1"
+	},
+   	"autoload":
+	{
+	  	"psr-4":
+		{
+		  "Project\\": "app/src"
+		}
+	}
+}

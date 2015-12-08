@@ -1,0 +1,19 @@
+<?php
+    use ObjectivePHP\Application\Session\Session;
+    use ObjectivePHP\Html\Tag\Tag;
+    use ObjectivePHP\Notification\MessageInterface;
+
+    $session  = new Session('notifications');
+
+    $messages = $session->get('*');
+    if ($messages)
+    {
+        $messages->each(function (MessageInterface $message)
+        {
+            Tag::div($message, 'alert alert-' . $message->getType());
+        });
+
+        $session->clear();
+    }
+
+?>
