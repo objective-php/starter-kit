@@ -722,12 +722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "f4b171f623173da8dc0b77c331539a6ff65766e6"
+                "reference": "8484dd749cf24f0d4f1a3c0ac773cc8267a206fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/f4b171f623173da8dc0b77c331539a6ff65766e6",
-                "reference": "f4b171f623173da8dc0b77c331539a6ff65766e6",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/8484dd749cf24f0d4f1a3c0ac773cc8267a206fc",
+                "reference": "8484dd749cf24f0d4f1a3c0ac773cc8267a206fc",
                 "shasum": ""
             },
             "require": {
@@ -763,7 +763,7 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2016-01-07 14:28:02"
+            "time": "2016-01-28 08:43:27"
         },
         {
             "name": "objective-php/components",
@@ -771,12 +771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/components.git",
-                "reference": "545a5e850839142f43ecd7aa25b01a2a386c1d3f"
+                "reference": "980bcf3a34df9e522c7041b05ec1095ee41c5747"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/components/zipball/545a5e850839142f43ecd7aa25b01a2a386c1d3f",
-                "reference": "545a5e850839142f43ecd7aa25b01a2a386c1d3f",
+                "url": "https://api.github.com/repos/objective-php/components/zipball/980bcf3a34df9e522c7041b05ec1095ee41c5747",
+                "reference": "980bcf3a34df9e522c7041b05ec1095ee41c5747",
                 "shasum": ""
             },
             "require": {
@@ -819,7 +819,7 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2016-01-07 14:00:42"
+            "time": "2016-01-28 08:44:14"
         },
         {
             "name": "objective-php/doctrine-package",
@@ -827,12 +827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/doctrine-package.git",
-                "reference": "600082690b75a34af7f496fcb011a16f21a2068d"
+                "reference": "af5f48b2d277489a3cfa840d21cea778958be017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/600082690b75a34af7f496fcb011a16f21a2068d",
-                "reference": "600082690b75a34af7f496fcb011a16f21a2068d",
+                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/af5f48b2d277489a3cfa840d21cea778958be017",
+                "reference": "af5f48b2d277489a3cfa840d21cea778958be017",
                 "shasum": ""
             },
             "require": {
@@ -873,7 +873,7 @@
                 "doctrine",
                 "objective php"
             ],
-            "time": "2016-01-07 14:28:13"
+            "time": "2016-01-28 08:44:56"
         },
         {
             "name": "objective-php/events-handler",
@@ -1017,12 +1017,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "b0b3b0df0dc2f976b4d4fbb21de623130afa29c8"
+                "reference": "726be64df6b413a3f159f4bb6ebd9adf8ef3a115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/b0b3b0df0dc2f976b4d4fbb21de623130afa29c8",
-                "reference": "b0b3b0df0dc2f976b4d4fbb21de623130afa29c8",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/726be64df6b413a3f159f4bb6ebd9adf8ef3a115",
+                "reference": "726be64df6b413a3f159f4bb6ebd9adf8ef3a115",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1058,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2016-01-07 14:28:37"
+            "time": "2016-01-28 08:44:29"
         },
         {
             "name": "psr/http-message",
