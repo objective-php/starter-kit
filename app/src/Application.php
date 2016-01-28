@@ -16,11 +16,12 @@
     use ObjectivePHP\Application\Operation\Common\ServiceLoader;
     use ObjectivePHP\Application\Operation\Common\SimpleRouter;
     use ObjectivePHP\Application\Operation\Common\ViewRenderer;
+    use ObjectivePHP\Application\Operation\Rta\ActionPlugger;
     use ObjectivePHP\Application\Operation\Rta\ActionRunner;
     use ObjectivePHP\Application\Operation\Rta\ViewResolver;
     use ObjectivePHP\Application\Session\Session;
     use ObjectivePHP\Application\View\Helper\Vars;
-    use ObjectivePHP\DoctrinePackage\DoctrinePackage;
+    use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
     use ObjectivePHP\Notification\Info;
     use Project\Middleware\LayoutSwitcher;
     use Project\Package\Example\ExamplePackage;
@@ -43,7 +44,7 @@
 
 
             // initialize request and response
-            $this->on('init')
+            $this->getStep('init')
                 // handle request and response
                  ->plug(new RequestWrapper())->as('request-wrapper')
                  ->plug(new ResponseInitializer())->as('response-initializer')
@@ -56,37 +57,43 @@
             // NOTE: using asDefault() make this middleware optional - if
             // another one with the same reference has been plugged earlier,
             // this call has no effect on the actual middleware stack
-            $this->on('route')->plug(SimpleRouter::class)->asDefault('router');
+            $this->getStep('route')->plug(SimpleRouter::class)->asDefault('router');
 
 
             // load framework native middleware
-            $this->on('bootstrap')->plug(ServiceLoader::class)->asDefault('service-loader');
+            $this->getStep('bootstrap')->plug(ServiceLoader::class)->asDefault('service-loader');
 
             // give access to config everywhere, including views
             //
             // Note: this is used by default layouts
-            $this->on('bootstrap')->plug(function($app) { Vars::$config = $app->getConfig(); });
+            $this->getStep('bootstrap')->plug(function($app) { Vars::$config = $app->getConfig(); });
 
             // action runner will catch action return value and inject the in the Vars container
-            $this->on('action')->plug(ActionRunner::class)->asDefault('action-runner');
+            $this->getStep('route')->plug(ActionPlugger::class)->asDefault('action-plugger');
+
 
 
             // handle view rendering
 
-            $this->on('rendering')
-                 ->plug(LayoutSwitcher::class, '/')
+            $this->getStep('rendering')
+                 ->plug(LayoutSwitcher::class, new UrlFilter('/'))
                  ->plug(new ViewResolver())->as('view-resolver')
                  ->plug(new ViewRenderer())->as('view-renderer')
             ;
 
-            $this->on('end')->plug(new ResponseSender());
+            $this->getStep('end')->plug(new ResponseSender());
 
         }
 
+        /**
+         * Gather all packages activation stuff
+         *
+         * @throws \ObjectivePHP\Application\Exception
+         */
         public function importPackages()
         {
 
-            $this->on('bootstrap')
+            $this->getStep('bootstrap')
                 // load external packages
                 ->plug(ExamplePackage::class)
 

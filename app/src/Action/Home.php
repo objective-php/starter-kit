@@ -21,9 +21,11 @@
          */
         public function run(ApplicationInterface $app)
         {
-
+            // Vars class holds view variables
+            //
+            // you can return an array of view variables or
+            // directly call it
 
             Vars::set('page.title', 'Objective PHP Project Template');
-
         }
     }

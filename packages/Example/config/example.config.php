@@ -1,5 +1,7 @@
 <?php
 
-    return [
-        'actions.namespaces' => 'Project\Package\Example\Action'
+use ObjectivePHP\Application\Config\ActionNamespace;
+
+return [
+        new ActionNamespace('Project\Package\Example\Action')
     ];

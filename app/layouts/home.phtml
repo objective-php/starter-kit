@@ -1,8 +1,7 @@
 <?php
-    use ObjectivePHP\Application\Session\Session;
-    use ObjectivePHP\Application\View\Helper\Vars;
-    use ObjectivePHP\Html\Tag\Tag;
-    use ObjectivePHP\Notification\MessageInterface;
+use ObjectivePHP\Application\Config\ApplicationName;
+use ObjectivePHP\Application\View\Helper\Vars;
+
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= Vars::config()->app->name . ' / Showcase' ?></title>
+    <title><?= Vars::config()->get(ApplicationName::class) . ' / Showcase' ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +34,7 @@
 
 <body role="document">
 
-<?php include __DIR__ .'/partials/navbar.phtml'; ?>
+<?php include __DIR__ . '/partials/navbar.phtml'; ?>
 
 <div class="container theme-showcase" role="main">
 
@@ -43,7 +42,7 @@
     <div class="jumbotron">
         <h1>
             <?= Vars::get('page.title') ?>
-                <br />
+            <br/>
             <?= Vars::string('page.subtitle')->prepend('<small>')->append('</small>') ?>
         </h1>
         <p></p>

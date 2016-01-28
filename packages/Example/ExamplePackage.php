@@ -4,9 +4,6 @@
 
     use ObjectivePHP\Application\ApplicationInterface;
     use ObjectivePHP\Config\Loader\DirectoryLoader;
-    use ObjectivePHP\Events\EventInterface;
-    use ObjectivePHP\Matcher\Matcher;
-    use ObjectivePHP\ServicesFactory\ServicesFactory;
     use Project\Application;
 
     /**
@@ -35,10 +32,7 @@
 
             // init package here
             $configLoader = new DirectoryLoader();
-            $config       = $configLoader->load(__DIR__ . '/config');
-
-            // merge package provided config with application config
-            $app->getConfig()->merge($config);
+            $configLoader->loadInto($app->getConfig(), __DIR__ . '/config');
 
         }
 
