@@ -4,9 +4,10 @@
 
 
     use ObjectivePHP\Application\Action\DefaultAction;
+    use ObjectivePHP\Application\Action\RenderableAction;
     use ObjectivePHP\Application\ApplicationInterface;
 
-    class Example extends DefaultAction
+    class Example extends RenderableAction
     {
         function run(ApplicationInterface $app)
         {

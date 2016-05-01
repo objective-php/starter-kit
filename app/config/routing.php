@@ -1,8 +1,8 @@
 <?php
 
-use ObjectivePHP\Application\Config\Route;
+use ObjectivePHP\Application\Config\UrlAlias;
 
 return [
         // route aliasing
-        new Route('/', '/home')
+        new UrlAlias('/', '/home')
 ];

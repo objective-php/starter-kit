@@ -1,9 +1,8 @@
 <?php
 
-    namespace Showcase;
+namespace Project;
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
-use ObjectivePHP\Application\Workflow\Event\WorkflowEvent;
 
 chdir(__DIR__);
 

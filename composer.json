@@ -18,9 +18,9 @@
   "require": {
     "php": ">=7.0",
     "objective-php/components": "dev-master",
-    "objective-php/services-factory": "dev-master",
-    "objective-php/events-handler": "dev-master",
-    "objective-php/message": "dev-master",
+    "objective-php/services-factory": "~1.0.0.0@dev",
+    "objective-php/events-handler": "~1.0.0.0@dev",
+    "objective-php/message": "0.9.*",
     "objective-php/application": "dev-master",
     "objective-php/doctrine-package": "dev-master",
     "doctrine/orm": ">=2.5",

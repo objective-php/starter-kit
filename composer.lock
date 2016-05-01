@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9cce1d293522797b891ac37ba781fd0b",
-    "content-hash": "3c30346d23f243e63854e66a7c63ae4b",
+    "hash": "0a4b954b9b7f305f355a781416cf53d3",
+    "content-hash": "b3d8e3902faae58f4582c4dd008cdf02",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -722,23 +722,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "8484dd749cf24f0d4f1a3c0ac773cc8267a206fc"
+                "reference": "7942c3054776cafab44f70687ce773afc9229340"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/8484dd749cf24f0d4f1a3c0ac773cc8267a206fc",
-                "reference": "8484dd749cf24f0d4f1a3c0ac773cc8267a206fc",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/7942c3054776cafab44f70687ce773afc9229340",
+                "reference": "7942c3054776cafab44f70687ce773afc9229340",
                 "shasum": ""
             },
             "require": {
                 "objective-php/components": "dev-master",
-                "objective-php/events-handler": "dev-master",
-                "objective-php/message": "dev-master",
-                "objective-php/services-factory": "dev-master",
+                "objective-php/events-handler": "~1.0.0@dev",
+                "objective-php/message": "0.9.*",
+                "objective-php/services-factory": "~1.0.0@dev",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "5.*"
             },
             "type": "framework",
             "autoload": {
@@ -763,7 +763,7 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2016-01-28 08:43:27"
+            "time": "2016-05-01 14:18:53"
         },
         {
             "name": "objective-php/components",
@@ -771,12 +771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/components.git",
-                "reference": "980bcf3a34df9e522c7041b05ec1095ee41c5747"
+                "reference": "55b13951d0ce0584d6022950f6d32b3a09be19d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/components/zipball/980bcf3a34df9e522c7041b05ec1095ee41c5747",
-                "reference": "980bcf3a34df9e522c7041b05ec1095ee41c5747",
+                "url": "https://api.github.com/repos/objective-php/components/zipball/55b13951d0ce0584d6022950f6d32b3a09be19d5",
+                "reference": "55b13951d0ce0584d6022950f6d32b3a09be19d5",
                 "shasum": ""
             },
             "require": {
@@ -789,6 +789,10 @@
                 "objective-php/primitives": "*"
             },
             "require-dev": {
+                "objective-php/application": "dev-master",
+                "objective-php/events-handler": "dev-master",
+                "objective-php/message": "dev-master",
+                "objective-php/services-factory": "dev-master",
                 "phpunit/phpunit": "5.*"
             },
             "type": "library",
@@ -819,7 +823,7 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2016-01-28 08:44:14"
+            "time": "2016-04-23 09:24:30"
         },
         {
             "name": "objective-php/doctrine-package",
@@ -827,25 +831,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/doctrine-package.git",
-                "reference": "af5f48b2d277489a3cfa840d21cea778958be017"
+                "reference": "98c2c990ced8f6886a6c91591334374f543fb3e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/af5f48b2d277489a3cfa840d21cea778958be017",
-                "reference": "af5f48b2d277489a3cfa840d21cea778958be017",
+                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/98c2c990ced8f6886a6c91591334374f543fb3e7",
+                "reference": "98c2c990ced8f6886a6c91591334374f543fb3e7",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": ">=2.5",
                 "objective-php/application": "dev-master",
                 "objective-php/components": "dev-master",
-                "objective-php/events-handler": "dev-master",
-                "objective-php/message": "dev-master",
-                "objective-php/services-factory": "dev-master",
+                "objective-php/events-handler": "~1.0.0@dev",
+                "objective-php/message": "0.9.*",
+                "objective-php/services-factory": "~1.0.0@dev",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "5.*"
             },
             "suggest": {
                 "objective-php/matcher": "~1.1"
@@ -873,11 +877,11 @@
                 "doctrine",
                 "objective php"
             ],
-            "time": "2016-01-28 08:44:56"
+            "time": "2016-05-01 14:25:15"
         },
         {
             "name": "objective-php/events-handler",
-            "version": "dev-master",
+            "version": "v1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/events-handler.git",
@@ -928,12 +932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/html.git",
-                "reference": "4c9bd163e2f2e5a3368a0486bc25ea912ed6bb68"
+                "reference": "83a148b0d42e73fb0bf352cfbe5b76e452f019c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/html/zipball/4c9bd163e2f2e5a3368a0486bc25ea912ed6bb68",
-                "reference": "4c9bd163e2f2e5a3368a0486bc25ea912ed6bb68",
+                "url": "https://api.github.com/repos/objective-php/html/zipball/83a148b0d42e73fb0bf352cfbe5b76e452f019c9",
+                "reference": "83a148b0d42e73fb0bf352cfbe5b76e452f019c9",
                 "shasum": ""
             },
             "require": {
@@ -943,7 +947,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "5.*"
             },
             "type": "library",
             "autoload": {
@@ -968,20 +972,20 @@
                 "html",
                 "objective php"
             ],
-            "time": "2015-11-27 11:27:26"
+            "time": "2016-04-30 19:15:45"
         },
         {
             "name": "objective-php/message",
-            "version": "dev-master",
+            "version": "v0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/message.git",
-                "reference": "a276efe80bc322ef44493e391653cfc6393a1739"
+                "reference": "b7756df8f5e8f195eafafd10ef616b7f4ac3dbee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/message/zipball/a276efe80bc322ef44493e391653cfc6393a1739",
-                "reference": "a276efe80bc322ef44493e391653cfc6393a1739",
+                "url": "https://api.github.com/repos/objective-php/message/zipball/b7756df8f5e8f195eafafd10ef616b7f4ac3dbee",
+                "reference": "b7756df8f5e8f195eafafd10ef616b7f4ac3dbee",
                 "shasum": ""
             },
             "require": {
@@ -1009,30 +1013,29 @@
                 }
             ],
             "description": "ObjectivePHP implementation for PSR-7",
-            "time": "2015-12-08 21:42:39"
+            "time": "2016-05-01 14:08:15"
         },
         {
             "name": "objective-php/services-factory",
-            "version": "dev-master",
+            "version": "v1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "726be64df6b413a3f159f4bb6ebd9adf8ef3a115"
+                "reference": "5b61e1d1424e54c75ad9666eb59c2e26c79ff683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/726be64df6b413a3f159f4bb6ebd9adf8ef3a115",
-                "reference": "726be64df6b413a3f159f4bb6ebd9adf8ef3a115",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/5b61e1d1424e54c75ad9666eb59c2e26c79ff683",
+                "reference": "5b61e1d1424e54c75ad9666eb59c2e26c79ff683",
                 "shasum": ""
             },
             "require": {
                 "container-interop/container-interop": "^1.1",
                 "objective-php/components": "dev-master",
-                "objective-php/events-handler": "dev-master",
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "phpunit/phpunit": "5.*"
             },
             "type": "library",
             "autoload": {
@@ -1058,7 +1061,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2016-01-28 08:44:29"
+            "time": "2016-04-30 18:01:33"
         },
         {
             "name": "psr/http-message",
@@ -1111,16 +1114,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.0.1",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "ebcdc507829df915f4ca23067bd59ee4ef61f6c3"
+                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/ebcdc507829df915f4ca23067bd59ee4ef61f6c3",
-                "reference": "ebcdc507829df915f4ca23067bd59ee4ef61f6c3",
+                "url": "https://api.github.com/repos/symfony/console/zipball/6b1175135bc2a74c08a28d89761272de8beed8cd",
+                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd",
                 "shasum": ""
             },
             "require": {
@@ -1167,11 +1170,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-22 10:39:06"
+            "time": "2016-03-16 17:00:50"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -1281,20 +1284,20 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "4d54fde709664562eb63356f0250d527824d05de"
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/4d54fde709664562eb63356f0250d527824d05de",
-                "reference": "4d54fde709664562eb63356f0250d527824d05de",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b1d59735b672865dbeb930805029c24f226e3e77",
+                "reference": "b1d59735b672865dbeb930805029c24f226e3e77",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4",
+                "php": "^5.4 || ^7.0",
                 "psr/http-message": "~1.0"
             },
             "provide": {
@@ -1327,7 +1330,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2016-01-04 21:37:32"
+            "time": "2016-03-17 18:02:05"
         }
     ],
     "packages-dev": [],
@@ -1337,7 +1340,6 @@
         "objective-php/components": 20,
         "objective-php/services-factory": 20,
         "objective-php/events-handler": 20,
-        "objective-php/message": 20,
         "objective-php/application": 20,
         "objective-php/doctrine-package": 20,
         "objective-php/html": 20
