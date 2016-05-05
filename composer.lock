@@ -722,12 +722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "7942c3054776cafab44f70687ce773afc9229340"
+                "reference": "c0920fd199704b991e25a2db82c969b0680785de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/7942c3054776cafab44f70687ce773afc9229340",
-                "reference": "7942c3054776cafab44f70687ce773afc9229340",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/c0920fd199704b991e25a2db82c969b0680785de",
+                "reference": "c0920fd199704b991e25a2db82c969b0680785de",
                 "shasum": ""
             },
             "require": {
@@ -763,7 +763,7 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2016-05-01 14:18:53"
+            "time": "2016-05-05 10:09:36"
         },
         {
             "name": "objective-php/components",
@@ -1114,16 +1114,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd"
+                "reference": "34a214710e0714b6efcf40ba3cd1e31373a97820"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/6b1175135bc2a74c08a28d89761272de8beed8cd",
-                "reference": "6b1175135bc2a74c08a28d89761272de8beed8cd",
+                "url": "https://api.github.com/repos/symfony/console/zipball/34a214710e0714b6efcf40ba3cd1e31373a97820",
+                "reference": "34a214710e0714b6efcf40ba3cd1e31373a97820",
                 "shasum": ""
             },
             "require": {
@@ -1170,7 +1170,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-16 17:00:50"
+            "time": "2016-04-28 09:48:42"
         },
         {
             "name": "symfony/polyfill-mbstring",
