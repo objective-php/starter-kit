@@ -35,7 +35,7 @@ done
 
 echo "Starting PHP internal server..."
 echo ""
-echo "Listing port: $PORT"
+echo "Listening to port: $PORT"
 echo "Application environment: $APPLICATION_ENV"
 echo ""
 echo ""
