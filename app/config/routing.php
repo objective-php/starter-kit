@@ -1,8 +1,10 @@
 <?php
 
-use ObjectivePHP\Application\Config\UrlAlias;
+use ObjectivePHP\Package\FastRoute\Config\FastRoute;
+use ObjectivePHP\Router\Config\UrlAlias;
+use Project\Action\Home;
 
 return [
         // route aliasing
-        new UrlAlias('/', '/home')
+        new FastRoute('home', '/', Home::class)
 ];

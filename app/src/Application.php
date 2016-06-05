@@ -21,6 +21,10 @@ use ObjectivePHP\Application\Operation\ActionRunner;
 use ObjectivePHP\Application\Operation\ViewResolver;
 use ObjectivePHP\Application\View\Helper\Vars;
 use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
+use ObjectivePHP\Package\FastRoute\FastRouteRouter;
+use ObjectivePHP\Router\Dispatcher;
+use ObjectivePHP\Router\MetaRouter;
+use ObjectivePHP\Router\PathMapperRouter;
 use Project\Middleware\LayoutSwitcher;
 use Project\Package\Example\ExamplePackage;
 
@@ -50,11 +54,8 @@ class Application extends AbstractApplication
         $this->importPackages();
 
         // route request (this is done after packages have been loaded)
-        //
-        // NOTE: using asDefault() make this middleware optional - if
-        // another one with the same reference has been plugged earlier,
-        // this call has no effect on the actual middleware stack
-        $this->getStep('route')->plug(SimpleRouter::class)->asDefault('router');
+        $router = new MetaRouter([new PathMapperRouter(), new FastRouteRouter()]);
+        $this->getStep('route')->plug($router)->as('router');
 
 
         // load framework native middleware
@@ -68,8 +69,8 @@ class Application extends AbstractApplication
             Vars::$config = $app->getConfig();
         });
 
-        // action runner will catch action return value and inject the in the Vars container
-        $this->getStep('route')->plug(ActionPlugger::class)->asDefault('action-plugger');
+        // the dispatcher will actually run the matched route
+        $this->getStep('route')->plug(new Dispatcher())->as('dispatcher');
 
 
         // handle view rendering

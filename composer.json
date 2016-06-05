@@ -18,6 +18,8 @@
   "require": {
     "php": ">=7.0",
     "objective-php/application": "dev-master",
+    "objective-php/router": "dev-master",
+    "objective-php/fastroute-package": "dev-master",
     "objective-php/doctrine-package": "dev-master",
     "twbs/bootstrap": "^3.3"
   },

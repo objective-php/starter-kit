@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "18841274ac7d38ff15f98980cc2c26e1",
-    "content-hash": "fcb546ee960a4252b2defea80a64cff5",
+    "hash": "6cf9282d6e37873abda67e198fe6c570",
+    "content-hash": "0d2b086befc79789a0935bf3d3851a24",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -717,17 +717,60 @@
             "time": "2015-11-01 10:19:22"
         },
         {
+            "name": "nikic/fast-route",
+            "version": "v0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "5e1f431ed2afe2be5d2bd97fa69b0e99b9ba45e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/5e1f431ed2afe2be5d2bd97fa69b0e99b9ba45e6",
+                "reference": "5e1f431ed2afe2be5d2bd97fa69b0e99b9ba45e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2016-03-25 23:46:52"
+        },
+        {
             "name": "objective-php/application",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "de5d9e59e6985dbfa7b840e4dcf6d3d5abc8cf1b"
+                "reference": "60033e0ce4371395df6d1d75d9b33d1220e64c2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/de5d9e59e6985dbfa7b840e4dcf6d3d5abc8cf1b",
-                "reference": "de5d9e59e6985dbfa7b840e4dcf6d3d5abc8cf1b",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/60033e0ce4371395df6d1d75d9b33d1220e64c2e",
+                "reference": "60033e0ce4371395df6d1d75d9b33d1220e64c2e",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +808,7 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2016-05-08 09:07:09"
+            "time": "2016-06-02 17:25:32"
         },
         {
             "name": "objective-php/components",
@@ -1017,6 +1060,60 @@
             "time": "2016-05-06 15:58:36"
         },
         {
+            "name": "objective-php/fastroute-package",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/objective-php/fastroute-package.git",
+                "reference": "db2e0432f9cd8192a5ca15a9a266f2c54447ff6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/objective-php/fastroute-package/zipball/db2e0432f9cd8192a5ca15a9a266f2c54447ff6a",
+                "reference": "db2e0432f9cd8192a5ca15a9a266f2c54447ff6a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": ">=2.5",
+                "nikic/fast-route": "0.8.*",
+                "objective-php/application": "dev-master",
+                "objective-php/components": "1.0.*",
+                "objective-php/message": "0.9.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "objective-php/router": "dev-master",
+                "phpunit/phpunit": "5.*"
+            },
+            "suggest": {
+                "objective-php/matcher": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ObjectivePHP\\Package\\FastRoute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gauthier 'Rusty' Delamarre",
+                    "email": "gauthier@objective-php.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "FAstRoute integration for Objective PHP",
+            "homepage": "https://github.com/objective-php/fastroute-package",
+            "keywords": [
+                "FastRoute",
+                "objective php"
+            ],
+            "time": "2016-06-02 17:23:14"
+        },
+        {
             "name": "objective-php/html",
             "version": "v1.0.0",
             "source": {
@@ -1066,16 +1163,16 @@
         },
         {
             "name": "objective-php/invokable",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/invokable.git",
-                "reference": "c5d2f3ca25731d22db1bdba21d7a50f5dafdbdf5"
+                "reference": "1e2ee94443488e68e429ba89bd0f567a2ffb5b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/invokable/zipball/c5d2f3ca25731d22db1bdba21d7a50f5dafdbdf5",
-                "reference": "c5d2f3ca25731d22db1bdba21d7a50f5dafdbdf5",
+                "url": "https://api.github.com/repos/objective-php/invokable/zipball/1e2ee94443488e68e429ba89bd0f567a2ffb5b7a",
+                "reference": "1e2ee94443488e68e429ba89bd0f567a2ffb5b7a",
                 "shasum": ""
             },
             "require": {
@@ -1110,7 +1207,7 @@
                 "invokable",
                 "objective php"
             ],
-            "time": "2016-05-06 16:10:35"
+            "time": "2016-06-02 17:33:19"
         },
         {
             "name": "objective-php/matcher",
@@ -1160,16 +1257,16 @@
         },
         {
             "name": "objective-php/message",
-            "version": "v0.9.2",
+            "version": "v0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/message.git",
-                "reference": "530907db662ecc9761de805cc07af1bdc44dc107"
+                "reference": "79ce1c65e7704537b58ee38d78a9a13f0a22ae7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/message/zipball/530907db662ecc9761de805cc07af1bdc44dc107",
-                "reference": "530907db662ecc9761de805cc07af1bdc44dc107",
+                "url": "https://api.github.com/repos/objective-php/message/zipball/79ce1c65e7704537b58ee38d78a9a13f0a22ae7f",
+                "reference": "79ce1c65e7704537b58ee38d78a9a13f0a22ae7f",
                 "shasum": ""
             },
             "require": {
@@ -1178,6 +1275,7 @@
             },
             "require-dev": {
                 "objective-php/phpunit-extension": "1.*",
+                "objective-php/router": "dev-master as 1.0",
                 "phpunit/phpunit": "5.*"
             },
             "type": "library",
@@ -1197,7 +1295,7 @@
                 }
             ],
             "description": "ObjectivePHP implementation for PSR-7",
-            "time": "2016-05-05 14:33:38"
+            "time": "2016-06-02 08:29:20"
         },
         {
             "name": "objective-php/notification",
@@ -1299,16 +1397,16 @@
         },
         {
             "name": "objective-php/primitives",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/primitives.git",
-                "reference": "a67967cccffae240110052df0d4e414fa7386e3b"
+                "reference": "dc785eafceb3e4332be5c5f1c079500b115a3a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/primitives/zipball/a67967cccffae240110052df0d4e414fa7386e3b",
-                "reference": "a67967cccffae240110052df0d4e414fa7386e3b",
+                "url": "https://api.github.com/repos/objective-php/primitives/zipball/dc785eafceb3e4332be5c5f1c079500b115a3a7d",
+                "reference": "dc785eafceb3e4332be5c5f1c079500b115a3a7d",
                 "shasum": ""
             },
             "require": {
@@ -1349,20 +1447,68 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2016-05-05 13:28:19"
+            "time": "2016-05-12 14:56:23"
         },
         {
-            "name": "objective-php/services-factory",
-            "version": "v1.0.2",
+            "name": "objective-php/router",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "0d7e6e95befcb3417825c7ad17445cfa429e3658"
+                "url": "https://github.com/objective-php/router.git",
+                "reference": "0765e7d180d4af57de4cb727822a5582c1a467bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/0d7e6e95befcb3417825c7ad17445cfa429e3658",
-                "reference": "0d7e6e95befcb3417825c7ad17445cfa429e3658",
+                "url": "https://api.github.com/repos/objective-php/router/zipball/0765e7d180d4af57de4cb727822a5582c1a467bc",
+                "reference": "0765e7d180d4af57de4cb727822a5582c1a467bc",
+                "shasum": ""
+            },
+            "require": {
+                "objective-php/phpunit-extension": "~1.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "objective-php/application": "dev-master",
+                "objective-php/phpunit-extension": "1.*",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ObjectivePHP\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gauthier 'Rusty' Delamarre",
+                    "email": "gauthier@objective-php.org",
+                    "role": "lead"
+                }
+            ],
+            "description": "Routing mechanism for Objective PHP",
+            "homepage": "https://github.com/objective-php/router",
+            "keywords": [
+                "objective php",
+                "router"
+            ],
+            "time": "2016-06-02 17:23:41"
+        },
+        {
+            "name": "objective-php/services-factory",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/objective-php/services-factory.git",
+                "reference": "6d7472fd6d9e19805d55ce1c31d7406e57987424"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/6d7472fd6d9e19805d55ce1c31d7406e57987424",
+                "reference": "6d7472fd6d9e19805d55ce1c31d7406e57987424",
                 "shasum": ""
             },
             "require": {
@@ -1404,7 +1550,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2016-05-07 12:11:20"
+            "time": "2016-05-08 13:28:26"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1603,16 +1749,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.0.5",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "34a214710e0714b6efcf40ba3cd1e31373a97820"
+                "reference": "f62db5b8afec27073a4609b8c84b1f9936652259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/34a214710e0714b6efcf40ba3cd1e31373a97820",
-                "reference": "34a214710e0714b6efcf40ba3cd1e31373a97820",
+                "url": "https://api.github.com/repos/symfony/console/zipball/f62db5b8afec27073a4609b8c84b1f9936652259",
+                "reference": "f62db5b8afec27073a4609b8c84b1f9936652259",
                 "shasum": ""
             },
             "require": {
@@ -1632,7 +1778,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1659,20 +1805,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-28 09:48:42"
+            "time": "2016-05-30 06:58:39"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "1289d16209491b584839022f29257ad859b8532d"
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
-                "reference": "1289d16209491b584839022f29257ad859b8532d",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
                 "shasum": ""
             },
             "require": {
@@ -1684,7 +1830,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1718,7 +1864,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-01-20 09:13:37"
+            "time": "2016-05-18 14:26:46"
         },
         {
             "name": "twbs/bootstrap",
@@ -1876,6 +2022,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "objective-php/application": 20,
+        "objective-php/router": 20,
+        "objective-php/fastroute-package": 20,
         "objective-php/doctrine-package": 20
     },
     "prefer-stable": false,
