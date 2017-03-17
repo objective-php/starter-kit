@@ -21,10 +21,13 @@ use ObjectivePHP\Application\Operation\ActionRunner;
 use ObjectivePHP\Application\Operation\ViewResolver;
 use ObjectivePHP\Application\View\Helper\Vars;
 use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
+use ObjectivePHP\Cli\Router\CliRouter;
 use ObjectivePHP\Package\FastRoute\FastRouteRouter;
 use ObjectivePHP\Router\Dispatcher;
 use ObjectivePHP\Router\MetaRouter;
 use ObjectivePHP\Router\PathMapperRouter;
+use Project\Cli\HelloWorld;
+use Project\Cli\Test;
 use Project\Middleware\LayoutSwitcher;
 use Project\Package\Example\ExamplePackage;
 
@@ -55,6 +58,13 @@ class Application extends AbstractApplication
 
         // route request (this is done after packages have been loaded)
         $router = new MetaRouter([new PathMapperRouter(), new FastRouteRouter()]);
+        
+        // integrates CLI commands
+        $cliRouter = new CliRouter();
+        $cliRouter->registerCommand(HelloWorld::class);
+        $cliRouter->registerCommand(Test::class);
+        $router->register($cliRouter);
+        
         $this->getStep('route')->plug($router)->as('router');
 
 

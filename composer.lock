@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0126ad88fc03b58b1e08e8ba99cb159",
-    "content-hash": "3875779466dcb428a730fcb891a77d25",
+    "hash": "17fb998c3a60f9f47e1d26960a535eda",
+    "content-hash": "28f2210d57bae820fcc308049dcf457e",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -725,6 +725,57 @@
             "time": "2015-11-01 10:19:22"
         },
         {
+            "name": "league/climate",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/climate.git",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/climate/zipball/b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "reference": "b103fc8faa3780c802cc507d5f0ff534ecc94fb5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "seld/cli-prompt": "~1.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.4",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\CLImate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Tannenbaum",
+                    "email": "hey@joe.codes",
+                    "homepage": "http://joe.codes/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP's best friend for the terminal. CLImate allows you to easily output colored text, special formats, and more.",
+            "keywords": [
+                "cli",
+                "colors",
+                "command",
+                "php",
+                "terminal"
+            ],
+            "time": "2016-04-04 20:24:59"
+        },
+        {
             "name": "nikic/fast-route",
             "version": "v1.2.0",
             "source": {
@@ -769,28 +820,30 @@
         },
         {
             "name": "objective-php/application",
-            "version": "v1.0.6",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "4189f75522955f021396f1f538ec82689229f189"
+                "reference": "2833c3fa4c9b8abfcae08c1ff7bf2a01d089986e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/4189f75522955f021396f1f538ec82689229f189",
-                "reference": "4189f75522955f021396f1f538ec82689229f189",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/2833c3fa4c9b8abfcae08c1ff7bf2a01d089986e",
+                "reference": "2833c3fa4c9b8abfcae08c1ff7bf2a01d089986e",
                 "shasum": ""
             },
             "require": {
-                "objective-php/components": "1.*",
-                "objective-php/data-processor": "1.0.*",
-                "objective-php/events-handler": "1.0.*",
-                "objective-php/html": "1.*",
-                "objective-php/message": "0.9.*",
-                "objective-php/services-factory": "1.0.*",
+                "objective-php/components": "^1.0.0",
+                "objective-php/data-processor": "~1.0.0",
+                "objective-php/events-handler": "~1.0.0",
+                "objective-php/html": "^1.0",
+                "objective-php/message": "~1.0.0",
+                "objective-php/services-factory": "~1.0.0",
                 "php": ">=7.0"
             },
             "require-dev": {
+                "objective-php/cli": "~1.0.0",
+                "objective-php/router": "~1.0.0",
                 "phpunit/phpunit": "5.*"
             },
             "type": "framework",
@@ -816,7 +869,52 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2017-01-17 11:43:40"
+            "time": "2017-03-17 11:28:19"
+        },
+        {
+            "name": "objective-php/cli",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/objective-php/cli.git",
+                "reference": "674ce807669df731578e9c537465d82fed975bbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/objective-php/cli/zipball/674ce807669df731578e9c537465d82fed975bbc",
+                "reference": "674ce807669df731578e9c537465d82fed975bbc",
+                "shasum": ""
+            },
+            "require": {
+                "league/climate": "^3.2"
+            },
+            "require-dev": {
+                "objective-php/application": "~1.1.0",
+                "objective-php/router": "~1.0.0",
+                "phpunit/phpunit": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ObjectivePHP\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gauthier 'Rusty' Delamarre",
+                    "email": "gauthier@objective-php.org"
+                }
+            ],
+            "description": "Cli commands handling library",
+            "keywords": [
+                "cli",
+                "objective php"
+            ],
+            "time": "2017-03-17 11:30:29"
         },
         {
             "name": "objective-php/components",
@@ -968,23 +1066,21 @@
         },
         {
             "name": "objective-php/doctrine-package",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/doctrine-package.git",
-                "reference": "385097527587606e447f684c5451b061b1b483a6"
+                "reference": "808606f677ca04eefe6ff768714e594d5206f89d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/385097527587606e447f684c5451b061b1b483a6",
-                "reference": "385097527587606e447f684c5451b061b1b483a6",
+                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/808606f677ca04eefe6ff768714e594d5206f89d",
+                "reference": "808606f677ca04eefe6ff768714e594d5206f89d",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": ">=2.5",
-                "objective-php/application": "1.0.*",
-                "objective-php/components": "1.0.*",
-                "objective-php/message": "0.9.*",
+                "objective-php/application": "^1.0.6",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -1016,7 +1112,7 @@
                 "doctrine",
                 "objective php"
             ],
-            "time": "2016-08-16 15:23:12"
+            "time": "2017-03-17 10:25:00"
         },
         {
             "name": "objective-php/events-handler",
@@ -1069,23 +1165,21 @@
         },
         {
             "name": "objective-php/fastroute-package",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/fastroute-package.git",
-                "reference": "0c2e814393a15592bf201ccbee8dc36c2df26745"
+                "reference": "6896fdacf557116fa95bde0bbb33d81b19c1f08d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/fastroute-package/zipball/0c2e814393a15592bf201ccbee8dc36c2df26745",
-                "reference": "0c2e814393a15592bf201ccbee8dc36c2df26745",
+                "url": "https://api.github.com/repos/objective-php/fastroute-package/zipball/6896fdacf557116fa95bde0bbb33d81b19c1f08d",
+                "reference": "6896fdacf557116fa95bde0bbb33d81b19c1f08d",
                 "shasum": ""
             },
             "require": {
                 "nikic/fast-route": "^1.0",
                 "objective-php/application": "^1.0.3",
-                "objective-php/components": "1.0.*",
-                "objective-php/message": "0.9.*",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -1118,7 +1212,7 @@
                 "FastRoute",
                 "objective php"
             ],
-            "time": "2017-01-09 16:51:52"
+            "time": "2017-03-17 10:36:10"
         },
         {
             "name": "objective-php/html",
@@ -1264,16 +1358,16 @@
         },
         {
             "name": "objective-php/message",
-            "version": "v0.9.5",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/message.git",
-                "reference": "cbc133aded78423d1a08c8eb6efbc5a3790e3b3c"
+                "reference": "974faaeae23f6b3dec6f490e2ed7697828e44fef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/message/zipball/cbc133aded78423d1a08c8eb6efbc5a3790e3b3c",
-                "reference": "cbc133aded78423d1a08c8eb6efbc5a3790e3b3c",
+                "url": "https://api.github.com/repos/objective-php/message/zipball/974faaeae23f6b3dec6f490e2ed7697828e44fef",
+                "reference": "974faaeae23f6b3dec6f490e2ed7697828e44fef",
                 "shasum": ""
             },
             "require": {
@@ -1302,7 +1396,7 @@
                 }
             ],
             "description": "ObjectivePHP implementation for PSR-7",
-            "time": "2016-06-26 15:39:48"
+            "time": "2017-03-16 16:57:25"
         },
         {
             "name": "objective-php/notification",
@@ -1850,6 +1944,54 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "seld/cli-prompt",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/cli-prompt.git",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\CliPrompt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
+            "keywords": [
+                "cli",
+                "console",
+                "hidden",
+                "input",
+                "prompt"
+            ],
+            "time": "2016-04-18 09:31:41"
         },
         {
             "name": "symfony/console",
