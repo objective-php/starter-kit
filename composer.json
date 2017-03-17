@@ -17,10 +17,10 @@
   ],
   "require": {
     "php": ">=7.0",
-    "objective-php/application": "dev-master",
-    "objective-php/router": "dev-master",
-    "objective-php/fastroute-package": "dev-master",
-    "objective-php/doctrine-package": "dev-master",
+    "objective-php/application": "~1.0.0",
+    "objective-php/router": "~1.0.0",
+    "objective-php/fastroute-package": "~1.0.0",
+    "objective-php/doctrine-package": "~1.0.0",
     "twbs/bootstrap": "^3.3"
   },
   "autoload": {
