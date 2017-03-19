@@ -1,7 +1,0 @@
-#!/usr/bin/env php#
-<?php
-$cwd = getcwd();
-chdir('public');
-include 'index.php';
-
-

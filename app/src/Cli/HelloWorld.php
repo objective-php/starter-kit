@@ -2,9 +2,12 @@
 
 namespace Project\Cli;
 
+use League\CLImate\CLImate;
 use ObjectivePHP\Application\ApplicationInterface;
 use ObjectivePHP\Cli\Action\AbstractCliAction;
+use ObjectivePHP\Cli\Action\Parameter\Argument;
 use ObjectivePHP\Cli\Action\Parameter\Param;
+use ObjectivePHP\Cli\Action\Parameter\Toggle;
 
 /**
  * Class HelloWorld
@@ -19,15 +22,17 @@ class HelloWorld extends AbstractCliAction
     public function __construct()
 	{
 	    $this->setCommand('hello');
-		$this->expects(new Param('name', 'Your name', Param::MANDATORY));
-	}
+	    $this->setDescription('Sample command that kindly greets the user');
+        $this->expects(new Param('name', 'Your name', Param::MANDATORY));
+    }
     
     /**
      * @param ApplicationInterface $app
      */
     public function run(ApplicationInterface $app)
     {
-        printf("Hello, %s", $this->getParam('name'));
+        $c = new CLImate();
+        $c->out(sprintf("Hello, <green><blink>%s</blink></green>", $this->getParam('name')));
     }
     
 }
