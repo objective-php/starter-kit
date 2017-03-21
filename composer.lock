@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "17fb998c3a60f9f47e1d26960a535eda",
-    "content-hash": "28f2210d57bae820fcc308049dcf457e",
+    "hash": "1588c508240f06883c4563dc2f5bafc9",
+    "content-hash": "7b9002047db0d4f9bae8abe99633bb11",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -873,16 +873,16 @@
         },
         {
             "name": "objective-php/cli",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/cli.git",
-                "reference": "674ce807669df731578e9c537465d82fed975bbc"
+                "reference": "bc8a5254b403da182315f8e77de0c42968754533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/cli/zipball/674ce807669df731578e9c537465d82fed975bbc",
-                "reference": "674ce807669df731578e9c537465d82fed975bbc",
+                "url": "https://api.github.com/repos/objective-php/cli/zipball/bc8a5254b403da182315f8e77de0c42968754533",
+                "reference": "bc8a5254b403da182315f8e77de0c42968754533",
                 "shasum": ""
             },
             "require": {
@@ -893,6 +893,9 @@
                 "objective-php/router": "~1.0.0",
                 "phpunit/phpunit": "^5.0"
             },
+            "bin": [
+                "bin/op"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -914,7 +917,7 @@
                 "cli",
                 "objective php"
             ],
-            "time": "2017-03-17 11:30:29"
+            "time": "2017-03-19 17:41:47"
         },
         {
             "name": "objective-php/components",
@@ -1947,16 +1950,16 @@
         },
         {
             "name": "seld/cli-prompt",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/cli-prompt.git",
-                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4"
+                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
-                "reference": "8cbe10923cae5bcd7c5a713f6703fc4727c8c1b4",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
+                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
                 "shasum": ""
             },
             "require": {
@@ -1991,7 +1994,7 @@
                 "input",
                 "prompt"
             ],
-            "time": "2016-04-18 09:31:41"
+            "time": "2017-03-18 11:32:45"
         },
         {
             "name": "symfony/console",

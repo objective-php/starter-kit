@@ -22,7 +22,7 @@
     "objective-php/fastroute-package": "~1.0.0",
     "objective-php/doctrine-package": "~1.0.0",
     "twbs/bootstrap": "^3.3",
-    "objective-php/cli": "^1.0"
+    "objective-php/cli": "^1.0.0"
   },
   "autoload": {
     "psr-4": {

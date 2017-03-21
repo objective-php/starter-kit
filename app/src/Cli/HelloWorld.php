@@ -23,7 +23,12 @@ class HelloWorld extends AbstractCliAction
 	{
 	    $this->setCommand('hello');
 	    $this->setDescription('Sample command that kindly greets the user');
-        $this->expects(new Param('name', 'Your name', Param::MANDATORY));
+
+        $this->expects(new Param(['s' => 'surname'], 'Your surname'));
+        $this->expects(new Argument('test', 'test arg', Argument::MANDATORY));
+        $this->expects(new Argument('test2', 'test arg'));
+
+        $this->expects(new Param(['n' => 'name'], 'Your name', Param::MANDATORY));
     }
     
     /**
@@ -32,7 +37,8 @@ class HelloWorld extends AbstractCliAction
     public function run(ApplicationInterface $app)
     {
         $c = new CLImate();
-        $c->out(sprintf("Hello, <green><blink>%s</blink></green>", $this->getParam('name')));
+        $c->out(sprintf("Hello, <green><blink>%s</blink></green>", $this->getParam('n')));
+        $c->out(sprintf("Hello, <red>%s</blink></red>", $this->getParam('test')));
     }
     
 }

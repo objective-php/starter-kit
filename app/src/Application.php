@@ -10,14 +10,12 @@ namespace Project;
  */
 
 use ObjectivePHP\Application\AbstractApplication;
+use ObjectivePHP\Application\Operation\ActionRunner;
 use ObjectivePHP\Application\Operation\RequestWrapper;
 use ObjectivePHP\Application\Operation\ResponseInitializer;
 use ObjectivePHP\Application\Operation\ResponseSender;
 use ObjectivePHP\Application\Operation\ServiceLoader;
-use ObjectivePHP\Application\Operation\SimpleRouter;
 use ObjectivePHP\Application\Operation\ViewRenderer;
-use ObjectivePHP\Application\Operation\ActionPlugger;
-use ObjectivePHP\Application\Operation\ActionRunner;
 use ObjectivePHP\Application\Operation\ViewResolver;
 use ObjectivePHP\Application\View\Helper\Vars;
 use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
@@ -28,6 +26,7 @@ use ObjectivePHP\Router\MetaRouter;
 use ObjectivePHP\Router\PathMapperRouter;
 use Project\Cli\HelloWorld;
 use Project\Cli\Test;
+use Project\Cli\Worker2 as Worker;
 use Project\Middleware\LayoutSwitcher;
 use Project\Package\Example\ExamplePackage;
 
@@ -58,13 +57,14 @@ class Application extends AbstractApplication
 
         // route request (this is done after packages have been loaded)
         $router = new MetaRouter([new PathMapperRouter(), new FastRouteRouter()]);
-        
+
         // integrates CLI commands
         $cliRouter = new CliRouter();
         $cliRouter->registerCommand(HelloWorld::class);
         $cliRouter->registerCommand(Test::class);
+        $cliRouter->registerCommand(Worker::class);
         $router->register($cliRouter);
-        
+
         $this->getStep('route')->plug($router)->as('router');
 
 
@@ -74,8 +74,7 @@ class Application extends AbstractApplication
         // give access to config everywhere, including views
         //
         // Note: this is used by default layouts
-        $this->getStep('bootstrap')->plug(function ($app)
-        {
+        $this->getStep('bootstrap')->plug(function ($app) {
             Vars::$config = $app->getConfig();
         });
 
