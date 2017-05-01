@@ -105,7 +105,15 @@ class Application extends AbstractApplication
         $this->getStep('bootstrap')
             // load external packages
             ->plug(ExamplePackage::class)
-            ->plug(DoctrinePackage::class);
+            // Uncomment below to activate Doctrine support for this application
+            //
+            // please note that if the Doctrine configuration does not match your local setup,
+            // exceptions may be thrown on ObjectivePHP startup
+            //
+            // if this happens, please check the app/config/doctrine.php configuration file
+            //
+            // ->plug(DoctrinePackage::class)
+        ;
 
     }
 
