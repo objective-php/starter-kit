@@ -20,6 +20,7 @@ use ObjectivePHP\Application\Operation\ViewResolver;
 use ObjectivePHP\Application\View\Helper\Vars;
 use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
 use ObjectivePHP\Cli\Router\CliRouter;
+use ObjectivePHP\Package\Doctrine\DoctrinePackage;
 use ObjectivePHP\Package\FastRoute\FastRouteRouter;
 use ObjectivePHP\Router\Dispatcher;
 use ObjectivePHP\Router\MetaRouter;
@@ -61,9 +62,9 @@ class Application extends AbstractApplication
         // integrates CLI commands
         $cliRouter = new CliRouter();
         $cliRouter->registerCommand(HelloWorld::class);
-        $cliRouter->registerCommand(Test::class);
-        $cliRouter->registerCommand(Worker::class);
         $router->register($cliRouter);
+        // this is needed for external packages to find the cli router to register their own commands
+        $this->getServicesFactory()->registerService(['id' => 'cli.router', 'instance' => $cliRouter]);
 
         $this->getStep('route')->plug($router)->as('router');
 
@@ -103,7 +104,8 @@ class Application extends AbstractApplication
 
         $this->getStep('bootstrap')
             // load external packages
-            ->plug(ExamplePackage::class);
+            ->plug(ExamplePackage::class)
+            ->plug(DoctrinePackage::class);
 
     }
 
