@@ -1604,16 +1604,16 @@
         },
         {
             "name": "objective-php/services-factory",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4"
+                "reference": "6a1857ca206ab78ae0cccbf3b607240a83f11269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4",
-                "reference": "fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/6a1857ca206ab78ae0cccbf3b607240a83f11269",
+                "reference": "6a1857ca206ab78ae0cccbf3b607240a83f11269",
                 "shasum": ""
             },
             "require": {
@@ -1656,7 +1656,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2017-06-29 13:45:12"
+            "time": "2017-06-29 14:05:54"
         },
         {
             "name": "phpdocumentor/reflection-common",
