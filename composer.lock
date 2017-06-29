@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "545a62fb7ca3ebebe3d7ea69cd309f40",
+    "hash": "97eeab4e1d48d139722cf30d15c0ca42",
+    "content-hash": "26a4fb4dde5b26fc90af9a6dd656993f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -35,7 +36,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14T19:40:03+00:00"
+            "time": "2017-02-14 19:40:03"
         },
         {
             "name": "doctrine/annotations",
@@ -103,7 +104,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-02-24T16:22:25+00:00"
+            "time": "2017-02-24 16:22:25"
         },
         {
             "name": "doctrine/cache",
@@ -173,7 +174,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2016-10-29T11:16:17+00:00"
+            "time": "2016-10-29 11:16:17"
         },
         {
             "name": "doctrine/collections",
@@ -240,7 +241,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2017-01-03T10:49:41+00:00"
+            "time": "2017-01-03 10:49:41"
         },
         {
             "name": "doctrine/common",
@@ -313,7 +314,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2017-01-13T14:02:13+00:00"
+            "time": "2017-01-13 14:02:13"
         },
         {
             "name": "doctrine/dbal",
@@ -384,7 +385,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2017-02-08T12:53:47+00:00"
+            "time": "2017-02-08 12:53:47"
         },
         {
             "name": "doctrine/inflector",
@@ -451,7 +452,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06T14:35:42+00:00"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "doctrine/instantiator",
@@ -505,7 +506,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14T21:17:01+00:00"
+            "time": "2015-06-14 21:17:01"
         },
         {
             "name": "doctrine/lexer",
@@ -559,7 +560,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09T13:34:57+00:00"
+            "time": "2014-09-09 13:34:57"
         },
         {
             "name": "doctrine/orm",
@@ -635,7 +636,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2016-12-18T15:42:34+00:00"
+            "time": "2016-12-18 15:42:34"
         },
         {
             "name": "erusev/parsedown",
@@ -677,7 +678,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-03-29T16:04:15+00:00"
+            "time": "2017-03-29 16:04:15"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -721,7 +722,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-11-01T10:19:22+00:00"
+            "time": "2015-11-01 10:19:22"
         },
         {
             "name": "league/climate",
@@ -772,7 +773,7 @@
                 "php",
                 "terminal"
             ],
-            "time": "2016-04-04T20:24:59+00:00"
+            "time": "2016-04-04 20:24:59"
         },
         {
             "name": "nikic/fast-route",
@@ -815,7 +816,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2017-01-19T11:35:12+00:00"
+            "time": "2017-01-19 11:35:12"
         },
         {
             "name": "objective-php/application",
@@ -868,20 +869,20 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2017-06-28T12:04:31+00:00"
+            "time": "2017-06-28 12:04:31"
         },
         {
             "name": "objective-php/cli",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/cli.git",
-                "reference": "bbe8cebf2b31569cbab2ad338ed9b33dbe304442"
+                "reference": "48022f155a9f4d40ea5fa5c511dbe05e08e3f558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/cli/zipball/bbe8cebf2b31569cbab2ad338ed9b33dbe304442",
-                "reference": "bbe8cebf2b31569cbab2ad338ed9b33dbe304442",
+                "url": "https://api.github.com/repos/objective-php/cli/zipball/48022f155a9f4d40ea5fa5c511dbe05e08e3f558",
+                "reference": "48022f155a9f4d40ea5fa5c511dbe05e08e3f558",
                 "shasum": ""
             },
             "require": {
@@ -916,26 +917,26 @@
                 "cli",
                 "objective php"
             ],
-            "time": "2017-05-27T13:12:58+00:00"
+            "time": "2017-06-28 12:10:06"
         },
         {
             "name": "objective-php/components",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/components.git",
-                "reference": "7a537f33ab8da44a17b50887a33ae2a8082ce48b"
+                "reference": "1048205612b6a76c9846b39e077a7f4c19b8995a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/components/zipball/7a537f33ab8da44a17b50887a33ae2a8082ce48b",
-                "reference": "7a537f33ab8da44a17b50887a33ae2a8082ce48b",
+                "url": "https://api.github.com/repos/objective-php/components/zipball/1048205612b6a76c9846b39e077a7f4c19b8995a",
+                "reference": "1048205612b6a76c9846b39e077a7f4c19b8995a",
                 "shasum": ""
             },
             "require": {
                 "objective-php/config": "~1.0",
                 "objective-php/data-processor": "~1.0",
-                "objective-php/invokable": "~1.0",
+                "objective-php/invokable": "~1.1",
                 "objective-php/matcher": "~1.0",
                 "objective-php/notification": "~1.0",
                 "objective-php/phpunit-extension": "~1.0",
@@ -964,20 +965,20 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2017-03-24T15:06:35+00:00"
+            "time": "2017-06-23 11:40:23"
         },
         {
             "name": "objective-php/config",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/config.git",
-                "reference": "a9808a04ae5a98be9861c56efdc03bee8b16eca4"
+                "reference": "d6f0b85b667e5b23cacab94d66124bd644aa0f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/config/zipball/a9808a04ae5a98be9861c56efdc03bee8b16eca4",
-                "reference": "a9808a04ae5a98be9861c56efdc03bee8b16eca4",
+                "url": "https://api.github.com/repos/objective-php/config/zipball/d6f0b85b667e5b23cacab94d66124bd644aa0f89",
+                "reference": "d6f0b85b667e5b23cacab94d66124bd644aa0f89",
                 "shasum": ""
             },
             "require": {
@@ -1012,7 +1013,7 @@
                 "config",
                 "objective-php"
             ],
-            "time": "2017-04-28T14:05:41+00:00"
+            "time": "2017-06-05 10:05:47"
         },
         {
             "name": "objective-php/data-processor",
@@ -1064,20 +1065,20 @@
                 "data procesosr",
                 "objective php"
             ],
-            "time": "2016-05-05T15:32:33+00:00"
+            "time": "2016-05-05 15:32:33"
         },
         {
             "name": "objective-php/doctrine-package",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/doctrine-package.git",
-                "reference": "dde3ac28f45ee1b00e4ba446b5ada6b95fceef9e"
+                "reference": "4d3fccaec8f3c92d1bc2a7c112c9fbdbad609f2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/dde3ac28f45ee1b00e4ba446b5ada6b95fceef9e",
-                "reference": "dde3ac28f45ee1b00e4ba446b5ada6b95fceef9e",
+                "url": "https://api.github.com/repos/objective-php/doctrine-package/zipball/4d3fccaec8f3c92d1bc2a7c112c9fbdbad609f2d",
+                "reference": "4d3fccaec8f3c92d1bc2a7c112c9fbdbad609f2d",
                 "shasum": ""
             },
             "require": {
@@ -1115,7 +1116,7 @@
                 "doctrine",
                 "objective php"
             ],
-            "time": "2017-05-01T15:58:15+00:00"
+            "time": "2017-06-28 13:38:21"
         },
         {
             "name": "objective-php/events-handler",
@@ -1164,20 +1165,20 @@
                 "events handler",
                 "objective php"
             ],
-            "time": "2016-05-06T15:58:36+00:00"
+            "time": "2016-05-06 15:58:36"
         },
         {
             "name": "objective-php/fastroute-package",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/fastroute-package.git",
-                "reference": "6896fdacf557116fa95bde0bbb33d81b19c1f08d"
+                "reference": "299773775ad31dcb54258830b190469de032a942"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/fastroute-package/zipball/6896fdacf557116fa95bde0bbb33d81b19c1f08d",
-                "reference": "6896fdacf557116fa95bde0bbb33d81b19c1f08d",
+                "url": "https://api.github.com/repos/objective-php/fastroute-package/zipball/299773775ad31dcb54258830b190469de032a942",
+                "reference": "299773775ad31dcb54258830b190469de032a942",
                 "shasum": ""
             },
             "require": {
@@ -1215,7 +1216,7 @@
                 "FastRoute",
                 "objective php"
             ],
-            "time": "2017-03-17T10:36:10+00:00"
+            "time": "2017-06-28 13:48:01"
         },
         {
             "name": "objective-php/html",
@@ -1263,20 +1264,20 @@
                 "html",
                 "objective php"
             ],
-            "time": "2016-05-06T22:22:14+00:00"
+            "time": "2016-05-06 22:22:14"
         },
         {
             "name": "objective-php/invokable",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/invokable.git",
-                "reference": "459f017413d58f730d3ec6a09b8fdaf24141401b"
+                "reference": "aec03eea6e85f133e30182cf9ca03bb1c85da1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/invokable/zipball/459f017413d58f730d3ec6a09b8fdaf24141401b",
-                "reference": "459f017413d58f730d3ec6a09b8fdaf24141401b",
+                "url": "https://api.github.com/repos/objective-php/invokable/zipball/aec03eea6e85f133e30182cf9ca03bb1c85da1c1",
+                "reference": "aec03eea6e85f133e30182cf9ca03bb1c85da1c1",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1312,7 @@
                 "invokable",
                 "objective php"
             ],
-            "time": "2017-03-24T10:16:19+00:00"
+            "time": "2017-06-29 12:46:13"
         },
         {
             "name": "objective-php/matcher",
@@ -1357,7 +1358,7 @@
                 "matcher",
                 "objective php"
             ],
-            "time": "2016-05-05T13:13:34+00:00"
+            "time": "2016-05-05 13:13:34"
         },
         {
             "name": "objective-php/message",
@@ -1399,7 +1400,7 @@
                 }
             ],
             "description": "ObjectivePHP implementation for PSR-7",
-            "time": "2017-05-23T16:51:19+00:00"
+            "time": "2017-05-23 16:51:19"
         },
         {
             "name": "objective-php/notification",
@@ -1452,7 +1453,7 @@
                 "components",
                 "objective php"
             ],
-            "time": "2017-04-26T16:31:48+00:00"
+            "time": "2017-04-26 16:31:48"
         },
         {
             "name": "objective-php/phpunit-extension",
@@ -1497,7 +1498,7 @@
                 "objective php",
                 "phpunit"
             ],
-            "time": "2016-05-05T12:55:53+00:00"
+            "time": "2016-05-05 12:55:53"
         },
         {
             "name": "objective-php/primitives",
@@ -1551,7 +1552,7 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2017-05-23T17:01:35+00:00"
+            "time": "2017-05-23 17:01:35"
         },
         {
             "name": "objective-php/router",
@@ -1599,26 +1600,27 @@
                 "objective php",
                 "router"
             ],
-            "time": "2016-06-02T17:23:41+00:00"
+            "time": "2016-06-02 17:23:41"
         },
         {
             "name": "objective-php/services-factory",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "d9f89dfce1c3ae5aa0ad3631164aec6ef93e5070"
+                "reference": "fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/d9f89dfce1c3ae5aa0ad3631164aec6ef93e5070",
-                "reference": "d9f89dfce1c3ae5aa0ad3631164aec6ef93e5070",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4",
+                "reference": "fe2d5735cf7cee5d6e7dadd1cabdcf11a42819b4",
                 "shasum": ""
             },
             "require": {
                 "container-interop/container-interop": "^1.1",
                 "doctrine/annotations": "*",
                 "objective-php/config": "~1.0.0",
+                "objective-php/invokable": "~1.1.1",
                 "objective-php/matcher": "~1.0.0",
                 "objective-php/primitives": "~1.3.0",
                 "php": ">=7.0",
@@ -1626,7 +1628,6 @@
             },
             "require-dev": {
                 "objective-php/events-handler": "~1.0.0",
-                "objective-php/invokable": "~1.0.0",
                 "objective-php/phpunit-extension": "~1.0.0",
                 "phpunit/phpunit": "5.*",
                 "zendframework/zend-servicemanager": "^2.7.6"
@@ -1655,7 +1656,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2017-05-01T14:47:47+00:00"
+            "time": "2017-06-29 13:45:12"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1709,7 +1710,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2015-12-27T11:43:31+00:00"
+            "time": "2015-12-27 11:43:31"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1754,7 +1755,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-09-30T07:12:33+00:00"
+            "time": "2016-09-30 07:12:33"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1801,7 +1802,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-11-25T06:54:22+00:00"
+            "time": "2016-11-25 06:54:22"
         },
         {
             "name": "psr/container",
@@ -1850,7 +1851,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14T16:28:37+00:00"
+            "time": "2017-02-14 16:28:37"
         },
         {
             "name": "psr/http-message",
@@ -1900,7 +1901,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -1947,7 +1948,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "seld/cli-prompt",
@@ -1995,20 +1996,20 @@
                 "input",
                 "prompt"
             ],
-            "time": "2017-03-18T11:32:45+00:00"
+            "time": "2017-03-18 11:32:45"
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.0",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "c80e63f3f5e3a331bfc25e6e9332b10422eb9b05"
+                "reference": "70d2a29b2911cbdc91a7e268046c395278238b2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/c80e63f3f5e3a331bfc25e6e9332b10422eb9b05",
-                "reference": "c80e63f3f5e3a331bfc25e6e9332b10422eb9b05",
+                "url": "https://api.github.com/repos/symfony/console/zipball/70d2a29b2911cbdc91a7e268046c395278238b2e",
+                "reference": "70d2a29b2911cbdc91a7e268046c395278238b2e",
                 "shasum": ""
             },
             "require": {
@@ -2021,6 +2022,7 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
+                "symfony/config": "~3.3",
                 "symfony/dependency-injection": "~3.3",
                 "symfony/event-dispatcher": "~2.8|~3.0",
                 "symfony/filesystem": "~2.8|~3.0",
@@ -2063,20 +2065,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-28T14:08:56+00:00"
+            "time": "2017-06-02 19:24:58"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.0",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "ef5f19a7a68075a0bd05969a329ead3b0776fb7a"
+                "reference": "e9c50482841ef696e8fa1470d950a79c8921f45d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/ef5f19a7a68075a0bd05969a329ead3b0776fb7a",
-                "reference": "ef5f19a7a68075a0bd05969a329ead3b0776fb7a",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/e9c50482841ef696e8fa1470d950a79c8921f45d",
+                "reference": "e9c50482841ef696e8fa1470d950a79c8921f45d",
                 "shasum": ""
             },
             "require": {
@@ -2119,20 +2121,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-27T16:02:27+00:00"
+            "time": "2017-06-01 21:01:25"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
+                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
                 "shasum": ""
             },
             "require": {
@@ -2144,7 +2146,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -2178,7 +2180,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14T01:06:16+00:00"
+            "time": "2017-06-09 14:24:12"
         },
         {
             "name": "twbs/bootstrap",
@@ -2229,7 +2231,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-07-25T15:51:55+00:00"
+            "time": "2016-07-25 15:51:55"
         },
         {
             "name": "webmozart/assert",
@@ -2279,7 +2281,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23T20:04:58+00:00"
+            "time": "2016-11-23 20:04:58"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -2331,7 +2333,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-04-06T16:18:34+00:00"
+            "time": "2017-04-06 16:18:34"
         }
     ],
     "packages-dev": [],

@@ -21,6 +21,7 @@
     "objective-php/router": "~1.0.0",
     "objective-php/fastroute-package": "~1.0.0",
     "objective-php/doctrine-package": "^1.1.0",
+    "objective-php/services-factory": "~1.2.0",
     "twbs/bootstrap": "^3.3",
     "objective-php/cli": "~1.0.0"
   },
@@ -30,3 +31,4 @@
     }
   }
 }
+
