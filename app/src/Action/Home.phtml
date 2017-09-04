@@ -1,6 +1,7 @@
 <?php
     // change layout
-    use ObjectivePHP\Html\Tag\Tag;
+use ObjectivePHP\Html\Js;
+use ObjectivePHP\Html\Tag\Tag;
 ?>
 
 
@@ -13,6 +14,10 @@
      *      <h1>What will you find here?</h1>
      *  </div>
      */
+
+
+    // load custom Js file
+    Js::embed('/js/custom.js');
 
     Tag::div(Tag::h1('And now?'), 'page-header');
 
