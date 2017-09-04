@@ -8,6 +8,8 @@ use ObjectivePHP\Cli\Action\AbstractCliAction;
 use ObjectivePHP\Cli\Action\Parameter\Argument;
 use ObjectivePHP\Cli\Action\Parameter\Param;
 use ObjectivePHP\Cli\Action\Parameter\Toggle;
+use ObjectivePHP\Html\Exception;
+use ObjectivePHP\ServicesFactory\Annotation\Inject;
 
 /**
  * Class HelloWorld
@@ -16,6 +18,12 @@ use ObjectivePHP\Cli\Action\Parameter\Toggle;
  */
 class HelloWorld extends AbstractCliAction
 {
+    
+    /**
+     * @Inject(service="matcher")
+     */
+    protected $matcher;
+    
     /**
      * HelloWorld constructor.
      */
@@ -39,6 +47,13 @@ class HelloWorld extends AbstractCliAction
         $c = new CLImate();
         $c->out(sprintf("Hello, <green><blink>%s</blink></green>", $this->getParam('n')));
         $c->out(sprintf("Hello, <red>%s</blink></red>", $this->getParam('test')));
+        
+        $x = function($a, $b) {
+            throw new Exception('plop');
+        };
+        
+        $x(1, fopen(__FILE__, 'r'));
+        
     }
     
 }

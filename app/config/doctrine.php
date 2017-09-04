@@ -3,9 +3,9 @@ use ObjectivePHP\Package\Doctrine\Config\EntityManager;
 
 return [
     (new EntityManager('default'))
-        ->setDbname('project')
+        ->setDbname('locate')
         ->setDriver('pdo_mysql')
-        ->setHost('localhost')
+        ->setHost('127.0.0.1')
         ->setUser('root')
         ->setEntitiesLocations(['app/src/Entity'])
 ];

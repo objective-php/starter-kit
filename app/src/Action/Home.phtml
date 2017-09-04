@@ -1,11 +1,22 @@
 <?php
     // change layout
-    use ObjectivePHP\Html\Tag\Tag;
-?>
+use ObjectivePHP\Html\Js;
+use ObjectivePHP\Html\Tag\Tag;
 
+
+
+?>
+<script>
+var call = function() {
+    var test = axios('/api/test');
+    console.info(test);
+}
+call();
+</script>
 
 <?php
 
+    Js::embed("https://unpkg.com/axios/dist/axios.min.js");
     /*
      * Tag helper calls below will produce this html code:
      *

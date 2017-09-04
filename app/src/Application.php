@@ -22,14 +22,15 @@ use ObjectivePHP\Application\Workflow\Filter\UrlFilter;
 use ObjectivePHP\Cli\Router\CliRouter;
 use ObjectivePHP\Package\Doctrine\DoctrinePackage;
 use ObjectivePHP\Package\FastRoute\FastRouteRouter;
+use ObjectivePHP\Package\WebSocket\WebSocketPackage;
 use ObjectivePHP\Router\Dispatcher;
 use ObjectivePHP\Router\MetaRouter;
 use ObjectivePHP\Router\PathMapperRouter;
 use Project\Cli\HelloWorld;
 use Project\Cli\Test;
-use Project\Cli\Worker2 as Worker;
 use Project\Middleware\LayoutSwitcher;
 use Project\Package\Example\ExamplePackage;
+use Project\WebSocket\WsListener;
 
 /**
  * Class Application
@@ -61,10 +62,7 @@ class Application extends AbstractApplication
 
         // integrates CLI commands
         $cliRouter = new CliRouter();
-        $cliRouter->registerCommand(HelloWorld::class);
         $router->register($cliRouter);
-        // this is needed for external packages to find the cli router to register their own commands
-        $this->getServicesFactory()->registerService(['id' => 'cli.router', 'instance' => $cliRouter]);
 
         $this->getStep('route')->plug($router)->as('router');
 
@@ -78,15 +76,19 @@ class Application extends AbstractApplication
         $this->getStep('bootstrap')->plug(function ($app) {
             Vars::$config = $app->getConfig();
         });
-
+    
+    
+        
         // the dispatcher will actually run the matched route
         $this->getStep('route')->plug(new Dispatcher())->as('dispatcher');
 
 
+        
+        
         // handle view rendering
 
         $this->getStep('rendering')
-            ->plug(LayoutSwitcher::class, new UrlFilter('/'))
+            ->plug(LayoutSwitcher::class, new UrlFilter('/'), function () { return (bool) rand(0, 1);})
             ->plug(new ViewResolver())->as('view-resolver')
             ->plug(new ViewRenderer())->as('view-renderer');
 
@@ -112,7 +114,8 @@ class Application extends AbstractApplication
             //
             // if this happens, please check the app/config/doctrine.php configuration file
             //
-            // ->plug(DoctrinePackage::class)
+            ->plug(DoctrinePackage::class)
+            ->plug(new WebSocketPackage(WsListener::class));
         ;
 
     }
