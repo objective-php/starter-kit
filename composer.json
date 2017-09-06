@@ -24,8 +24,7 @@
     "objective-php/services-factory": "^1.2.0",
     "twbs/bootstrap": "^3.3",
     "objective-php/cli": "^1.0.0",
-    "hoa/websocket": "^3.17",
-    "objective-php/web-socket-package": "^1.0.0"
+    "objective-php/ws-server-package": "dev-master"
   },
   "autoload": {
     "psr-4": {

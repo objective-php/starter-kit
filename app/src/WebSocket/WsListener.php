@@ -11,11 +11,21 @@ namespace Project\WebSocket;
 
 use Hoa\Event\Bucket;
 use Hoa\Websocket\Server;
+use ObjectivePHP\Package\WebSocketServer\WsServerWrapper;
+use ObjectivePHP\ServicesFactory\Specs\InjectionAnnotationProvider;
 
 class WsListener
 {
-    public function onChat($params, Bucket $bucket, Server $server)
+
+    /**
+     * @Inject(service="dep")
+     */
+    protected $dep;
+
+
+    public function onSendMessage($params, WsServerWrapper $wsServer)
     {
-        $bucket->getSource()->send($params['message']);
+        $wsServer->reply('feedback', ['message' => 'You said: ' . $params['message']]);
     }
+
 }

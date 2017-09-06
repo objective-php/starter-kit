@@ -23,6 +23,7 @@ use ObjectivePHP\Cli\Router\CliRouter;
 use ObjectivePHP\Package\Doctrine\DoctrinePackage;
 use ObjectivePHP\Package\FastRoute\FastRouteRouter;
 use ObjectivePHP\Package\WebSocket\WebSocketPackage;
+use ObjectivePHP\Package\WebSocketServer\WebSocketServerPackage;
 use ObjectivePHP\Router\Dispatcher;
 use ObjectivePHP\Router\MetaRouter;
 use ObjectivePHP\Router\PathMapperRouter;
@@ -115,7 +116,7 @@ class Application extends AbstractApplication
             // if this happens, please check the app/config/doctrine.php configuration file
             //
             ->plug(DoctrinePackage::class)
-            ->plug(new WebSocketPackage(WsListener::class));
+            ->plug(new WebSocketServerPackage());
         ;
 
     }

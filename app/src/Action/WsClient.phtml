@@ -11,8 +11,6 @@
         var samp = document.createElement('samp');
         samp.innerHTML = message + '\n';
         output.appendChild(samp);
-
-        return;
     };
 
     input.addEventListener('keyup', function (evt) {
@@ -24,14 +22,12 @@
             }
 
             try {
-                socket.send(JSON.stringify({event: "chat", "params": {"message" :msg}}));
+                socket.send(JSON.stringify({event: "send-message", "data": {"message" :msg}}));
                 input.value = '';
                 input.focus();
             } catch (e) {
                 console.log(e);
             }
-
-            return;
         }
     });
 
@@ -40,18 +36,15 @@
         socket.onopen = function () {
             print('connection is opened');
             input.focus();
-
-            return;
         };
         socket.onmessage = function (msg) {
-            print(msg.data);
-
-            return;
+            console.info(msg);
+            data = JSON.parse(msg.data);
+            console.info(data);
+            print(data.data.message);
         };
         socket.onclose = function () {
             print('connection is closed');
-
-            return;
         };
     } catch (e) {
         console.log(e);
