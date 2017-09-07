@@ -1,17 +1,22 @@
-<input type="text" id="input" placeholder="Message…"/>
+<span id="identifier" data-id="<?= $_GET['nickname'] ?? ''?>"></span>
+<input type="text" id="input" placeholder="Message…"/> <select id="recipient"><option value="">All</option><option value="toto">toto</option><option value="titi">titi</option> </select>
 <hr/>
 <pre id="output"></pre>
 
 <script>
-    var host = 'ws://127.0.0.1:8889';
+    var host = 'wss://127.0.0.1:8889';
     var socket = null;
     var input = document.getElementById('input');
     var output = document.getElementById('output');
+
+
     var print = function (message) {
         var samp = document.createElement('samp');
         samp.innerHTML = message + '\n';
         output.appendChild(samp);
     };
+
+
 
     input.addEventListener('keyup', function (evt) {
         if (13 === evt.keyCode) {
@@ -22,7 +27,15 @@
             }
 
             try {
-                socket.send(JSON.stringify({event: "send-message", "data": {"message" :msg}}));
+                var data = {"message" :msg};
+                var recipient = document.getElementById('recipient').options[document.getElementById('recipient').selectedIndex].value;
+                var eventId = 'send-message';
+                if(recipient != '') {
+                    data.recipient = recipient;
+                    eventId = 'send-message-to';
+                }
+
+                socket.send(JSON.stringify({event: eventId, "data": data}));
                 input.value = '';
                 input.focus();
             } catch (e) {
@@ -33,15 +46,32 @@
 
     try {
         socket = new WebSocket(host);
+
         socket.onopen = function () {
             print('connection is opened');
+            var nickname = document.getElementById('identifier').getAttribute('data-id');
+            if(!nickname) {
+                var nickname = prompt('What\'s your name?');
+            }
+            socket.send(JSON.stringify({'event': 'identify', 'data' : {'identifier': nickname}}));
             input.focus();
         };
         socket.onmessage = function (msg) {
-            console.info(msg);
-            data = JSON.parse(msg.data);
-            console.info(data);
-            print(data.data.message);
+
+            rpc = JSON.parse(msg.data);
+
+            switch(rpc.event)
+            {
+                case 'feedback':
+                    console.info(rpc.data);
+                    print(rpc.data.message);
+                    break;
+
+
+                case 'identified':
+                    console.info("I'm now known as " + rpc.data.identity);
+                    break;
+            }
         };
         socket.onclose = function () {
             print('connection is closed');

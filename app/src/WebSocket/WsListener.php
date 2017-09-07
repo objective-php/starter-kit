@@ -9,23 +9,21 @@
 namespace Project\WebSocket;
 
 
-use Hoa\Event\Bucket;
-use Hoa\Websocket\Server;
 use ObjectivePHP\Package\WebSocketServer\WsServerWrapper;
-use ObjectivePHP\ServicesFactory\Specs\InjectionAnnotationProvider;
 
 class WsListener
 {
 
-    /**
-     * @Inject(service="dep")
-     */
-    protected $dep;
-
-
-    public function onSendMessage($params, WsServerWrapper $wsServer)
+    public function onSendMessage($data, WsServerWrapper $wsServer)
     {
-        $wsServer->reply('feedback', ['message' => 'You said: ' . $params['message']]);
+        $wsServer->reply('feedback', ['message' => 'You said: ' . $data['message']]);
+        $wsServer->broadcastOthers('feedback', ['message' => $wsServer->getCurrentClient()->getIdentifier() . ' said: "' . $data['message'] .'"']);
+    }
+
+    public function onSendMessageTo($data, WsServerWrapper $wsServer)
+    {
+        $wsServer->reply('feedback', ['message' => 'You said "' . $data['message'] . '" to <i>' . $data['recipient'] . '</i>']);
+        $wsServer->sendTo($data['recipient'], 'feedback', ['message' => $wsServer->getCurrentClient()->getIdentifier() . ' said : "' . $data['message'] . '" to you.']);
     }
 
 }
