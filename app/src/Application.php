@@ -59,7 +59,7 @@ class Application extends AbstractApplication
         $this->importPackages();
 
         // route request (this is done after packages have been loaded)
-        $router = new MetaRouter([new PathMapperRouter(), new FastRouteRouter()]);
+        $router = new MetaRouter([new FastRouteRouter(), new PathMapperRouter()]);
 
         // integrates CLI commands
         $cliRouter = new CliRouter();

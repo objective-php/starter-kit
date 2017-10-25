@@ -11,6 +11,7 @@
     {
         function run(ApplicationInterface $app)
         {
+
             return ['action.var' => uniqid()];
         }
 

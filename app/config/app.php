@@ -16,6 +16,6 @@ return [
     new ApplicationName('Project Template'),
     new ActionNamespace('Project\\Action'),
     new LayoutsLocation('app/layouts'),
-    new WebSocketServerConfig([WsListener::class]),
-    (new WebSocketServerConfig([WsListener::class], 8899, '127.0.0.1', 'wss'))->setAction((new WebSocketServer())->setCommand('secure-server')),
+    new WebSocketServerConfig([WsListener::class], 8889, '192.168.1.101'),
+  //  (new WebSocketServerConfig([WsListener::class], 8899, '192.168.1.101', 'ws'))->setAction((new WebSocketServer())->setCommand('secure-server')),
 ];

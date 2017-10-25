@@ -1,6 +1,8 @@
 <?php
 use ObjectivePHP\Application\Config\ApplicationName;
 use ObjectivePHP\Application\View\Helper\Vars;
+use ObjectivePHP\Html\Css;
+use ObjectivePHP\Html\Js;
 
 ?>
 
@@ -14,15 +16,21 @@ use ObjectivePHP\Application\View\Helper\Vars;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= Vars::config()->get(ApplicationName::class) . ' / Showcase' ?></title>
+    <title><?= Vars::config()->get(ApplicationName::class) . ' / Starter kit' ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/css/theme.css" rel="stylesheet">
+    <?php
+    // embed CSS files
+
+    // Bootstrap core CSS and themes
+    Css::prepend('/bootstrap/css/bootstrap.min.css');
+    Css::prepend('/bootstrap/css/bootstrap-theme.min.css');
+    Css::prepend('/css/theme.css');
+
+    // dump all CSS
+    Css::dump();
+    ?>
+
 
     <?php \ObjectivePHP\Html\Js::dump() ?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,11 +63,13 @@ use ObjectivePHP\Application\View\Helper\Vars;
 <!-- /container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
+<?php
+Js::prepend('/bootstrap/js/bootstrap.min.js');
 
+// Caution: keep in mind the last prepended file is the first to get actually loaded
+Js::prepend("/js/jquery.min.js");
+
+Js::dump();
+?>
 </body>
 </html>

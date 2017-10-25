@@ -13,6 +13,14 @@ use ObjectivePHP\Application\View\Helper\Vars;
  */
 class Home extends RenderableAction
 {
+
+    public function init()
+    {
+        // $this->registerParamProcessor('from', new DateProcessor(), true);
+        //$this->registerParamProcessor('id', new NumericProcessor(INT_POSITIVE));
+
+    }
+
     /**
      * @param ApplicationInterface
      *
@@ -20,6 +28,8 @@ class Home extends RenderableAction
      */
     public function run(ApplicationInterface $app)
     {
+
+
         // Vars class holds view variables
         //
         // you can return an array of view variables or

@@ -29,5 +29,4 @@ class Test extends VersionedApiAction
         $this->registerMiddleware('2.0', TestV2::class);
     }
 
-
 }
