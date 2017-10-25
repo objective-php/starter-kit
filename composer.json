@@ -22,6 +22,7 @@
     "objective-php/fastroute-package": "^1.0.0",
     "objective-php/doctrine-package": "^1.1.0",
     "objective-php/services-factory": "^1.2.0",
+    "objective-php/ws-server-package": "^1.0.2",
     "twbs/bootstrap": "^3.3",
     "objective-php/cli": "^1.0.0"
   },
