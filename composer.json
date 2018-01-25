@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.1",
     "objective-php/application": "^1.1.0",
     "objective-php/router": "^1.0.0",
     "objective-php/fastroute-package": "^1.0.0",
@@ -30,6 +30,8 @@
     "psr-4": {
       "Project\\": "app/src"
     }
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.3"
   }
 }
-

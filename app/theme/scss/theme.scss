@@ -1,0 +1,25 @@
+$primary: #515A91;
+
+@import "~bootstrap/scss/bootstrap";
+
+.terminal {
+  font-family: monospace;
+  background: #272b38;
+  color: #48d8a0;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+div p:last-child {
+  margin-bottom: 0;
+}
+
+.homepage-tools {
+  margin: {
+    top:34px;
+    bottom:34px;
+  }
+  .homepage-tools-inside {
+    height: 150px;
+  }
+}

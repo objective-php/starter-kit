@@ -1,34 +1,95 @@
 <?php
-    // change layout
-use ObjectivePHP\Html\Js;
 use ObjectivePHP\Html\Tag\Tag;
-
-
-
+use ObjectivePHP\Application\View\Helper\Vars;
 ?>
-<script>
-var call = function() {
-    var test = axios('/api/test');
-    console.info(test);
-}
-call();
-</script>
 
-<?php
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading"><?= Vars::get('page.title') ?></h1>
+        <p class="lead text-muted"><?= Vars::get('page.subtitle') ?></p>
+        <p>
+            <a href="http://objective-php.org" class="btn btn-primary my-2" target="_blank">view documentation</a>
+            <a href="http://github.com/objective-php" class="btn btn-secondary my-2" target="_blank">browse components</a>
+        </p>
+    </div>
+</section>
 
-    Js::embed("https://unpkg.com/axios/dist/axios.min.js");
-    /*
-     * Tag helper calls below will produce this html code:
-     *
-     * <div class="page-header">
-     *      <h1>What will you find here?</h1>
-     *  </div>
-     */
+<main class="container">
 
-    Tag::div(Tag::h1('And now?'), 'page-header');
+    <div class="row">
+        <div class="col-sm-12">
+            <?php
+            Tag::h2('And now?');
+            Tag::p('You\'re encouraged to read these examples source code, as well as Objective PHP components source.');
+            Tag::p('You can also take a look at the objective-php/showcase package, on which this starter kit is based, but which contains some more Objective PHP gadgets demos.');
+            ?>
+        </div>
+    </div>
 
+    <div class="row homepage-tools">
+        <div class="col-sm-12">
+            <h2>This starter kit come with helpful tools</h2>
+        </div>
+        <div class="col-sm-4 text-center">
+            <img class="homepage-tools-inside" src="/img/codeception.jpg">
+            <h5><strong>Codeception</strong></h5>
+            <p class="text-muted">Codeception collects and shares best practices and solutions for testing PHP web applications. With a flexible set of included modules tests are easy to write, easy to use and easy to maintain.</p>
+        </div>
+        <div class="col-sm-7 offset-sm-1">
+            <div class="terminal">
+                <p class="m-b-md">
+                    <span class="text-muted">&gt; $ vendor/bin/codecept bootstrap</span><br>
+                    Codeception is installed for acceptance, functional, and unit testing
+                </p>
+                <p class="m-b-md">
+                    <span class="text-muted">&gt; $ phpdbg -qrr vendor/bin/codecept run unit --coverage</span><br>
+                    Codeception PHP Testing Framework v2.3.7<br>
+                    Powered by PHPUnit 6.4.4 by Sebastian Bergmann and contributors.<br>
+                    <br>
+                    Unit Tests (0) -------------------------------<br>
+                    ----------------------------------------------<br>
+                    <br>
+                    Time: 180 ms, Memory: 8.00MB<br>
+                    <br>
+                    No tests executed!<br>
+                    <br>
+                    Code Coverage Report:<br>
+                    2018-01-25 15:23:24<br>
+                    <br>
+                    Summary:<br>
+                    Classes:        (0/0)<br>
+                    Methods:        (0/0)<br>
+                    Lines:          (0/0)<br>
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="row homepage-tools">
+        <div class="col-sm-4 text-center">
+            <img class="homepage-tools-inside" src="/img/webpack.png">
+            <h5><strong>Webpack</strong></h5>
+            <p class="text-muted">Webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it includes every module your application needs, then packages all of those modules.</p>
+        </div>
+        <div class="col-sm-7 offset-sm-1">
+            <div class="terminal">
+                <p class="m-b-md">
+                    <span class="text-muted">&gt; $ yarn install</span><br>
+                    Done in 0.43s.
+                </p>
+                <p class="m-b-md">
+                    <span class="text-muted">&gt; $ yarn run dev</span><br>
+                    Webpack is watching the files…<br>
+                    <br>
+                    Hash: 93bdfaf6e1f1cf658db3<br>
+                    Version: webpack 3.10.0<br>
+                    Time: 4835ms<br>
+                    Asset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size&nbsp;&nbsp;&nbsp;Chunks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chunk Names<br>
+                    theme.js&nbsp;&nbsp;472 kB 0 [emitted] main<br>
+                    style.css&nbsp;188 kB 0 [emitted] main<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
 
-    Tag::p('This project provides developers with a pre-configured project template. Once installed, you should start working on your own application!');
-    Tag::p('Given we do not provide you with much documentation... well, we actually have no documentation at all, so you\'re encouraged to read these examples source code, as well as Objective PHP components source.');
-    Tag::p('You can also take a look at the objective-php/showcase package, on which this starter kit is based, but which contains some more Objective PHP gadgets demos.');
