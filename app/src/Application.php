@@ -40,6 +40,13 @@ use Project\WebSocket\WsListener;
  */
 class Application extends AbstractApplication
 {
+    /**
+     * @return mixed|void
+     *
+     * @throws \ObjectivePHP\Application\Exception
+     * @throws \ObjectivePHP\Primitives\Exception
+     * @throws \ObjectivePHP\ServicesFactory\Exception\Exception
+     */
     public function init()
     {
 
@@ -63,6 +70,7 @@ class Application extends AbstractApplication
 
         // integrates CLI commands
         $cliRouter = new CliRouter();
+        $this->getServicesFactory()->registerService(['id' => 'cli.router', 'instance' => $cliRouter]);
         $router->register($cliRouter);
 
         $this->getStep('route')->plug($router)->as('router');
@@ -101,6 +109,7 @@ class Application extends AbstractApplication
      * Gather all packages activation stuff
      *
      * @throws \ObjectivePHP\Application\Exception
+     * @throws \ObjectivePHP\Primitives\Exception
      */
     public function importPackages()
     {
