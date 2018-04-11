@@ -36,5 +36,6 @@ class Home extends RenderableAction
         // directly call it
 
         Vars::set('page.title', 'Objective PHP Project Template');
+        Vars::set('page.subtitle', 'This project provides developers with a pre-configured project template. Once installed, you should start working on your own application!');
     }
 }
