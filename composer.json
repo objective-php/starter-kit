@@ -1,42 +1,32 @@
 {
-    "name": "objective-php/starter-kit",
-    "description": "Objective PHP Project Template",
-    "type": "skeleton",
-    "keywords": [
-        "skeleton",
-        "objective php"
-    ],
-    "homepage": "https://github.com/objective-php/starter-kit",
-    "license": "GPL-3.0",
-    "authors": [
-        {
-            "name": "Gauthier 'Rusty' Delamarre",
-            "email": "gauthier@objective-php.org",
-            "role": "lead"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Project\\": "app/src"
-        }
-    },
-    "require": {
-        "php": ">=7.0",
-        "objective-php/application": "^1.1.0",
-        "objective-php/router": "^1.0.0",
-        "objective-php/fastroute-package": "^1.0.0",
-        "objective-php/doctrine-package": "^1.1.0",
-        "objective-php/services-factory": "^1.2.0",
-        "objective-php/ws-server-package": "^1.0.2",
-        "objective-php/cli": "^1.0.0"
-    },
-    "require-dev": {
-        "codeception/codeception": "^2.3"
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "npm install",
-            "npm run build"
-        ]
+  "name": "objective-php/starter-kit",
+  "description": "Objective PHP Project Template",
+  "type": "skeleton",
+  "keywords": [
+    "skeleton",
+    "objective php"
+  ],
+  "homepage": "https://github.com/objective-php/starter-kit",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Gauthier 'Rusty' Delamarre",
+      "email": "gauthier@objective-php.org",
+      "role": "lead"
     }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "objective-php/application": "^2.0",
+    "objective-php/phtml-action": "^2.0",
+    "objective-php/services-factory": "dev-master as v2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Project\\": "app/src"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "*"
+  }
 }

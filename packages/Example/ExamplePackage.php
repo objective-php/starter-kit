@@ -1,40 +1,28 @@
 <?php
-    
-    namespace Project\Package\Example;
 
-    use ObjectivePHP\Application\ApplicationInterface;
-    use ObjectivePHP\Config\Loader\DirectoryLoader;
-    use Project\Application;
+namespace Project\Package\Example;
 
-    /**
-     * Class ExamplePackage
-     *
-     * Access /example on your local copy to trigger some content generation from here
-     *
-     * @package Showcase\Package\Debug
-     */
-    class ExamplePackage
+use ObjectivePHP\Application\Package\PackageInterface;
+use ObjectivePHP\Application\Workflow\PackagesInitListener;
+use ObjectivePHP\Application\Workflow\WorkflowEventInterface;
+use ObjectivePHP\Config\Loader\FileLoader\FileLoader;
+
+/**
+ * Class ExamplePackage
+ *
+ * Access /example on your local copy to trigger some content generation from here
+ *
+ * @package Showcase\Package\Debug
+ */
+class ExamplePackage implements PackageInterface, PackagesInitListener
+{
+    public function onPackagesInit(WorkflowEventInterface $event)
     {
 
-        /**
-         * @param Application $app
-         *
-         * @throws \ObjectivePHP\Config\Exception
-         */
-        public function __invoke(ApplicationInterface $app)
-        {
+        $params = (new FileLoader())->load(__DIR__ . '/config');
 
-            // setup autoloading for current package
-            //
-            // note that a relative path is relative to the application root directory!
-            $app->getAutoloader()->addPsr4('Project\\Package\\Example\\', 'packages/Example/src');
-
-
-            // init package here
-            $configLoader = new DirectoryLoader();
-            $configLoader->loadInto($app->getConfig(), __DIR__ . '/config');
-
-        }
-
+        $event->getApplication()->getConfig()->hydrate($params);
 
     }
+
+}

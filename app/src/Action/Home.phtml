@@ -1,12 +1,11 @@
 <?php
 use ObjectivePHP\Html\Tag\Tag;
-use ObjectivePHP\Application\View\Helper\Vars;
 ?>
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading"><?= Vars::get('page.title') ?></h1>
-        <p class="lead text-muted"><?= Vars::get('page.subtitle') ?></p>
+        <h1 class="jumbotron-heading"><?= $this->get('page.title') ?></h1>
+        <p class="lead text-muted"><?= $this->get('page.subtitle') ?></p>
         <p>
             <a href="http://objective-php.org" class="btn btn-primary my-2" target="_blank">view documentation</a>
             <a href="http://github.com/objective-php" class="btn btn-secondary my-2" target="_blank">browse components</a>

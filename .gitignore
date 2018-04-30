@@ -1,7 +1,5 @@
 .idea/
 vendor/
 node_modules/
-app/config/*.local.php
 public/style.css
 public/theme.js
-tests/_output/

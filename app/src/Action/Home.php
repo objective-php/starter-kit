@@ -2,40 +2,24 @@
 
 namespace Project\Action;
 
-use ObjectivePHP\Application\Action\RenderableAction;
-use ObjectivePHP\Application\ApplicationInterface;
-use ObjectivePHP\Application\View\Helper\Vars;
+use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlAction;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 
 /**
  * Class Home
  *
  * @package Showcase\Action
  */
-class Home extends RenderableAction
+class Home extends PhtmlAction
 {
-
-    public function init()
-    {
-        // $this->registerParamProcessor('from', new DateProcessor(), true);
-        //$this->registerParamProcessor('id', new NumericProcessor(INT_POSITIVE));
-
-    }
-
     /**
-     * @param ApplicationInterface
-     *
-     * @return array
+     * Process an incoming server request and return a response, optionally delegating
+     * response creation to a handler.
      */
-    public function run(ApplicationInterface $app)
+    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-
-
-        // Vars class holds view variables
-        //
-        // you can return an array of view variables or
-        // directly call it
-
-        Vars::set('page.title', 'Objective PHP Project Template');
-        Vars::set('page.subtitle', 'This project provides developers with a pre-configured project template. Once installed, you should start working on your own application!');
+        return $this->render(['uuid' => uniqid()]);
     }
 }

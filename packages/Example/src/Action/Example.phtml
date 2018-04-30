@@ -1,12 +1,6 @@
 <main class="container">
-<?php
-    use ObjectivePHP\Application\View\Helper\Vars;
-    use ObjectivePHP\Html\Tag\Tag;
+<h2>Example action from a package</h2>
 
-    Vars::set('page.title', 'Using view variables');
-
-    Tag::h2('Example action from a package');
-
-    Tag::p(['Display here variables returned by the related action:', Tag::strong('Vars::get(\'action.var\')'), ' == ', Tag::i(Vars::get('action.var'))]);
-?>
+<p>Display here variables returned by the related action: <strong>$this->get('action.var') ==
+        <i><?= $this->get('action.var') ?></i></strong></p>
 </main>
