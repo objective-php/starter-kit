@@ -4,8 +4,129 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "62a8e13ff751c4d583ab6faea33eed71",
+    "content-hash": "38e5b2f754cd211ffa99010ac6f15a6f",
     "packages": [
+        {
+            "name": "aura/accept",
+            "version": "2.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Accept.git",
+                "reference": "38d835363d424e07b35dd35f46b00b2916500ee6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Accept/zipball/38d835363d424e07b35dd35f46b00b2916500ee6",
+                "reference": "38d835363d424e07b35dd35f46b00b2916500ee6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "aura/di": "~2.0",
+                "phpunit/phpunit": "~5.7 || ~4.8"
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library",
+                    "config": {
+                        "common": "Aura\\Accept\\_Config\\Common"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Accept\\": "src/",
+                    "Aura\\Accept\\_Config\\": "config/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Accept Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Accept/contributors"
+                }
+            ],
+            "description": "Provides content-negotiation tools using Accept* headers.",
+            "homepage": "https://github.com/auraphp/Aura.Accept",
+            "keywords": [
+                "accept",
+                "accept-charset",
+                "accept-encoding",
+                "accept-language",
+                "content negotiation",
+                "content type",
+                "media type"
+            ],
+            "time": "2017-03-10T17:30:49+00:00"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5",
+                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2016-08-30T16:08:34+00:00"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
@@ -790,6 +911,56 @@
                 "primitives"
             ],
             "time": "2017-09-04T12:32:58+00:00"
+        },
+        {
+            "name": "objective-php/rest-action",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/objective-php/rest-action.git",
+                "reference": "19eb28843156e578a28593c3ca7278e2fc7ecb70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/objective-php/rest-action/zipball/19eb28843156e578a28593c3ca7278e2fc7ecb70",
+                "reference": "19eb28843156e578a28593c3ca7278e2fc7ecb70",
+                "shasum": ""
+            },
+            "require": {
+                "aura/accept": "^2.2",
+                "composer/semver": "^1.4",
+                "objective-php/http-action": "^1.0",
+                "objective-php/services-factory": "dev-master as v2.0.0",
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ObjectivePHP\\Middleware\\Action\\RestAction\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Flavien Rodrigues",
+                    "email": "rodrigues.flavien@gmail.com"
+                }
+            ],
+            "description": "Rest(ful) aware PSR-15 Middleware library",
+            "homepage": "https://github.com/objective-php/rest-action",
+            "keywords": [
+                "action",
+                "objective php",
+                "psr-15",
+                "rest"
+            ],
+            "time": "2018-04-30T14:26:38+00:00"
         },
         {
             "name": "objective-php/router",

@@ -15,10 +15,17 @@
       "role": "lead"
     }
   ],
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../rest-action"
+    }
+  ],
   "require": {
     "php": ">=7.0",
     "objective-php/application": "^2.0",
     "objective-php/phtml-action": "^2.0",
+    "objective-php/rest-action": "^2.0",
     "objective-php/services-factory": "dev-master as v2.0.0"
   },
   "autoload": {
