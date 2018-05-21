@@ -21,5 +21,4 @@ class CliApplication extends AbstractCliApplication
 
     }
 
-
 }
