@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "f0c8c0565c5eb094b728c031a715154f",
-    "content-hash": "8ec27be50252bdc43665b03b6110366b",
+    "content-hash": "7d34d68c3527b92bc00e0228f001a608",
     "packages": [
         {
             "name": "aura/accept",
@@ -64,7 +63,7 @@
                 "content type",
                 "media type"
             ],
-            "time": "2017-03-10 17:30:49"
+            "time": "2017-03-10T17:30:49+00:00"
         },
         {
             "name": "composer/semver",
@@ -126,7 +125,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30 16:08:34"
+            "time": "2016-08-30T16:08:34+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -157,7 +156,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14 19:40:03"
+            "time": "2017-02-14T19:40:03+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -225,7 +224,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-02-24 16:22:25"
+            "time": "2017-02-24T16:22:25+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -279,7 +278,7 @@
                 "lexer",
                 "parser"
             ],
-            "time": "2014-09-09 13:34:57"
+            "time": "2014-09-09T13:34:57+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -325,7 +324,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2018-03-08 01:11:30"
+            "time": "2018-03-08T01:11:30+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -369,7 +368,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-11-01 10:19:22"
+            "time": "2015-11-01T10:19:22+00:00"
         },
         {
             "name": "league/climate",
@@ -430,20 +429,20 @@
                 "php",
                 "terminal"
             ],
-            "time": "2018-04-29 16:43:54"
+            "time": "2018-04-29T16:43:54+00:00"
         },
         {
             "name": "objective-php/application",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "16b930ddcc9ecbd34046c9ccc621ddc16b942e62"
+                "reference": "9a42689ff4277c4a983ec621452f0ea0b35ddfb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/16b930ddcc9ecbd34046c9ccc621ddc16b942e62",
-                "reference": "16b930ddcc9ecbd34046c9ccc621ddc16b942e62",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/9a42689ff4277c4a983ec621452f0ea0b35ddfb5",
+                "reference": "9a42689ff4277c4a983ec621452f0ea0b35ddfb5",
                 "shasum": ""
             },
             "require": {
@@ -486,29 +485,28 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2018-05-11 12:43:03"
+            "time": "2018-05-24T12:44:23+00:00"
         },
         {
             "name": "objective-php/cli",
-            "version": "v1.2.0",
+            "version": "V2.0.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/cli.git",
-                "reference": "97e680b200986123b69bbd1031f30c573b072bc1"
+                "reference": "7f6f825ef01f801921dd58f6d60de269c8c9c3cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/cli/zipball/97e680b200986123b69bbd1031f30c573b072bc1",
-                "reference": "97e680b200986123b69bbd1031f30c573b072bc1",
+                "url": "https://api.github.com/repos/objective-php/cli/zipball/7f6f825ef01f801921dd58f6d60de269c8c9c3cf",
+                "reference": "7f6f825ef01f801921dd58f6d60de269c8c9c3cf",
                 "shasum": ""
             },
             "require": {
-                "league/climate": "^3.2"
+                "league/climate": "^3.2",
+                "objective-php/application": "^2.0.2"
             },
             "require-dev": {
-                "objective-php/application": "~1.1.0",
-                "objective-php/router": "~1.0.0",
-                "phpunit/phpunit": "^5.0"
+                "codeception/codeception": "^2.4"
             },
             "bin": [
                 "bin/op"
@@ -534,20 +532,20 @@
                 "cli",
                 "objective php"
             ],
-            "time": "2018-01-16 11:28:41"
+            "time": "2018-05-24T13:03:20+00:00"
         },
         {
             "name": "objective-php/config",
-            "version": "v2.0.5",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/config.git",
-                "reference": "98d69964f811c80b59f9d8710e68f7bcccb1ef32"
+                "reference": "d0d4cd9db8b38fe81135d870687bc57b411bf845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/config/zipball/98d69964f811c80b59f9d8710e68f7bcccb1ef32",
-                "reference": "98d69964f811c80b59f9d8710e68f7bcccb1ef32",
+                "url": "https://api.github.com/repos/objective-php/config/zipball/d0d4cd9db8b38fe81135d870687bc57b411bf845",
+                "reference": "d0d4cd9db8b38fe81135d870687bc57b411bf845",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +579,7 @@
                 "config",
                 "objective-php"
             ],
-            "time": "2018-04-17 14:44:59"
+            "time": "2018-04-26T09:50:11+00:00"
         },
         {
             "name": "objective-php/events-handler",
@@ -630,7 +628,7 @@
                 "events handler",
                 "objective php"
             ],
-            "time": "2018-04-09 14:16:54"
+            "time": "2018-04-09T14:16:54+00:00"
         },
         {
             "name": "objective-php/filter",
@@ -676,7 +674,7 @@
                 "filter",
                 "objective php"
             ],
-            "time": "2018-04-30 09:53:42"
+            "time": "2018-04-30T09:53:42+00:00"
         },
         {
             "name": "objective-php/html",
@@ -724,7 +722,7 @@
                 "html",
                 "objective php"
             ],
-            "time": "2017-09-04 11:03:52"
+            "time": "2017-09-04T11:03:52+00:00"
         },
         {
             "name": "objective-php/http-action",
@@ -769,7 +767,7 @@
                 "objective php",
                 "psr-15"
             ],
-            "time": "2018-03-14 08:20:22"
+            "time": "2018-03-14T08:20:22+00:00"
         },
         {
             "name": "objective-php/matcher",
@@ -815,7 +813,7 @@
                 "matcher",
                 "objective php"
             ],
-            "time": "2018-01-08 15:44:02"
+            "time": "2018-01-08T15:44:02+00:00"
         },
         {
             "name": "objective-php/notification",
@@ -868,7 +866,7 @@
                 "components",
                 "objective php"
             ],
-            "time": "2017-04-26 16:31:48"
+            "time": "2017-04-26T16:31:48+00:00"
         },
         {
             "name": "objective-php/phpunit-extension",
@@ -913,7 +911,7 @@
                 "objective php",
                 "phpunit"
             ],
-            "time": "2016-05-05 12:55:53"
+            "time": "2016-05-05T12:55:53+00:00"
         },
         {
             "name": "objective-php/phtml-action",
@@ -966,7 +964,7 @@
                 "psr-15",
                 "view"
             ],
-            "time": "2018-05-13 12:03:50"
+            "time": "2018-05-13T12:03:50+00:00"
         },
         {
             "name": "objective-php/primitives",
@@ -1020,7 +1018,7 @@
                 "objective php",
                 "primitives"
             ],
-            "time": "2017-09-04 12:32:58"
+            "time": "2017-09-04T12:32:58+00:00"
         },
         {
             "name": "objective-php/rest-action",
@@ -1028,19 +1026,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/rest-action.git",
-                "reference": "19eb28843156e578a28593c3ca7278e2fc7ecb70"
+                "reference": "39ea126d2f3078d524d0ad347854c470d279ad7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/rest-action/zipball/19eb28843156e578a28593c3ca7278e2fc7ecb70",
-                "reference": "19eb28843156e578a28593c3ca7278e2fc7ecb70",
+                "url": "https://api.github.com/repos/objective-php/rest-action/zipball/39ea126d2f3078d524d0ad347854c470d279ad7e",
+                "reference": "39ea126d2f3078d524d0ad347854c470d279ad7e",
                 "shasum": ""
             },
             "require": {
                 "aura/accept": "^2.2",
                 "composer/semver": "^1.4",
                 "objective-php/http-action": "^1.0",
-                "objective-php/services-factory": "dev-master as v2.0.0",
+                "objective-php/services-factory": "^2.0",
                 "php": "~7.0"
             },
             "require-dev": {
@@ -1070,20 +1068,20 @@
                 "psr-15",
                 "rest"
             ],
-            "time": "2018-04-30 14:26:38"
+            "time": "2018-05-24T13:14:11+00:00"
         },
         {
             "name": "objective-php/router",
-            "version": "v2.0.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/router.git",
-                "reference": "fc5a27c2b40a5cd0b551e28bab124ef52fa91cd1"
+                "reference": "554893b30ad9d4c22a6f6c72ca9fb4b8c272df0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/router/zipball/fc5a27c2b40a5cd0b551e28bab124ef52fa91cd1",
-                "reference": "fc5a27c2b40a5cd0b551e28bab124ef52fa91cd1",
+                "url": "https://api.github.com/repos/objective-php/router/zipball/554893b30ad9d4c22a6f6c72ca9fb4b8c272df0a",
+                "reference": "554893b30ad9d4c22a6f6c72ca9fb4b8c272df0a",
                 "shasum": ""
             },
             "require": {
@@ -1120,11 +1118,11 @@
                 "objective php",
                 "router"
             ],
-            "time": "2018-04-10 14:49:21"
+            "time": "2018-04-26T09:32:01+00:00"
         },
         {
             "name": "objective-php/services-factory",
-            "version": "dev-master",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
@@ -1173,7 +1171,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2018-04-26 12:09:55"
+            "time": "2018-04-26T12:09:55+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1227,7 +1225,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11 18:02:19"
+            "time": "2017-09-11T18:02:19+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1278,7 +1276,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-30 07:14:17"
+            "time": "2017-11-30T07:14:17+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1325,7 +1323,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14 14:27:02"
+            "time": "2017-07-14T14:27:02+00:00"
         },
         {
             "name": "psr/container",
@@ -1374,7 +1372,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14 16:28:37"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1424,7 +1422,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -1477,7 +1475,7 @@
                 "response",
                 "server"
             ],
-            "time": "2018-01-22 17:04:15"
+            "time": "2018-01-22T17:04:15+00:00"
         },
         {
             "name": "psr/http-server-middleware",
@@ -1530,7 +1528,7 @@
                 "request",
                 "response"
             ],
-            "time": "2018-01-22 17:08:31"
+            "time": "2018-01-22T17:08:31+00:00"
         },
         {
             "name": "psr/log",
@@ -1577,7 +1575,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -1625,7 +1623,7 @@
                 "input",
                 "prompt"
             ],
-            "time": "2017-03-18 11:32:45"
+            "time": "2017-03-18T11:32:45+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -1675,7 +1673,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29 19:49:41"
+            "time": "2018-01-29T19:49:41+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -1727,7 +1725,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-02-26 15:44:50"
+            "time": "2018-02-26T15:44:50+00:00"
         }
     ],
     "packages-dev": [
@@ -1788,81 +1786,25 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-04-26 10:06:28"
-        },
-        {
-            "name": "symfony/polyfill-php72",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "a4576e282d782ad82397f3e4ec1df8e0f0cafb46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/a4576e282d782ad82397f3e4ec1df8e0f0cafb46",
-                "reference": "a4576e282d782ad82397f3e4ec1df8e0f0cafb46",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php72\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2018-04-26 10:06:28"
+            "time": "2018-04-26T10:06:28+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.0.9",
+            "version": "v3.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3c34cf3f4bbac9e003d9325225e9ef1a49180a18"
+                "reference": "0e6545672d8c9ce70dd472adc2f8b03155a46f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3c34cf3f4bbac9e003d9325225e9ef1a49180a18",
-                "reference": "3c34cf3f4bbac9e003d9325225e9ef1a49180a18",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/0e6545672d8c9ce70dd472adc2f8b03155a46f73",
+                "reference": "0e6545672d8c9ce70dd472adc2f8b03155a46f73",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php72": "~1.5"
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
                 "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
@@ -1873,12 +1815,13 @@
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
-                "ext-intl": "To show region name in time zone dump"
+                "ext-intl": "To show region name in time zone dump",
+                "ext-symfony_debug": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1912,20 +1855,13 @@
                 "debug",
                 "dump"
             ],
-            "time": "2018-04-26 16:12:06"
+            "time": "2018-04-26T12:42:15+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "v2.0.0",
-            "alias_normalized": "2.0.0.0",
-            "version": "9999999-dev",
-            "package": "objective-php/services-factory"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "objective-php/services-factory": 20
+        "objective-php/cli": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -26,8 +26,8 @@
     "objective-php/application": "^2.0",
     "objective-php/phtml-action": "^2.0",
     "objective-php/rest-action": "^2.0",
-    "objective-php/services-factory": "dev-master as v2.0.0",
-    "objective-php/cli": "^1.2"
+    "objective-php/services-factory": "^2.0",
+    "objective-php/cli": "^2.0.0-beta"
   },
   "autoload": {
     "psr-4": {

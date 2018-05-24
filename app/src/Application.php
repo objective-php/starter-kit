@@ -17,7 +17,7 @@ use Project\Package\Example\ExamplePackage;
 /**
  * Class Application
  *
- * @package Showcase
+ * @package Project
  */
 class Application extends AbstractHttpApplication
 {
