@@ -20,6 +20,10 @@ class Home extends PhtmlAction
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return $this->render(['uuid' => uniqid()]);
+        return $this->render([
+            'page.title' => 'Objective PHP Project Template',
+            'page.subtitle' => 'This project provides developers with a pre-configured project template. 
+            Once installed, you should start working on your own application!',
+        ]);
     }
 }
