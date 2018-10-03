@@ -12,15 +12,8 @@ use Psr\Http\Message\ServerRequestInterface;
  */
 class ExamplesEndpointV1 extends AbstractEndpoint
 {
-    protected $models = [
-        1 => ['id' => 1, 'name' => 'Gauthier', 'email' => 'gde@opcoding.eu'],
-        2 => ['id' => 2, 'name' => 'Arnaud', 'email' => 'apa@opcoding.eu']
-    ];
-
     public function get(ServerRequestInterface $request)
     {
-        $id = $request->getQueryParams()['id'] ?? array_rand($this->models);
-
-        return $this->models[$id];
+        return ['This', 'is', __METHOD__, 'return'];
     }
 }

@@ -19,6 +19,7 @@ class Examples extends AbstractRestAction
 
         // Register versioned endpoints
         $this->registerEndpoint('1.0.0', ExamplesEndpointV1::class);
+        $this->registerEndpoint('1.1.5', ExamplesEndpointV1_1_5::class);
         $this->registerEndpoint('2.0.0', ExamplesEndpointV2::class);
     }
 }

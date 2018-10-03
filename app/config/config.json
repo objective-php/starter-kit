@@ -1,2 +1,7 @@
 {
+  "services": {
+    "utils.example-helper": {
+      "class": "Project\\Utils\\ExampleHelper"
+    }
+  }
 }
