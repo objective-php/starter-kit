@@ -3,7 +3,7 @@
 # default values
 
 PORT=8080
-APPLICATION_ENV="development"
+APPLICATION_ENV="dev"
 
 
 pointer=1

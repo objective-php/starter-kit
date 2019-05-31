@@ -8,6 +8,10 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
+/**
+ * Class Example
+ * @package Project\Package\Example\Action
+ */
 class Example extends PhtmlAction
 {
     /**

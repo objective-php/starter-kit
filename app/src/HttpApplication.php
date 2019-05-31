@@ -12,6 +12,7 @@ namespace Project;
 use ObjectivePHP\Application\AbstractHttpApplication;
 use ObjectivePHP\Middleware\Action\PhtmlAction\ExceptionHandler\DefaultExceptionRenderer;
 use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlActionPackage;
+use ObjectivePHP\Router\RouterPackage;
 use Project\Injector\UtilsInjector;
 use Project\Package\Example\ExamplePackage;
 
@@ -20,21 +21,13 @@ use Project\Package\Example\ExamplePackage;
  *
  * @package Project
  */
-class Application extends AbstractHttpApplication
+class HttpApplication extends AbstractHttpApplication
 {
     public function init()
     {
         // register default exception handler
         $this->getExceptionHandlers()
             ->registerMiddleware(new DefaultExceptionRenderer());
-
-        // register Phtml action package
-        $this->registerPackage(new PhtmlActionPackage());
-
-        // register local example package
-        $this->registerPackage(new ExamplePackage());
-
-        // register dependency injector
-        $this->getServicesFactory()->registerInjector(new UtilsInjector());
     }
+
 }

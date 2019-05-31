@@ -16,12 +16,14 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.1",
     "objective-php/application": "^2.0",
     "objective-php/phtml-action": "^2.0",
     "objective-php/rest-action": "^2.0",
     "objective-php/services-factory": "^2.0",
-    "objective-php/cli": "^2.0.0-beta"
+    "objective-php/cli": "^2.0.0-beta",
+    "symfony/var-dumper": "^4.3",
+    "objective-php/debugging-tools": "dev-master"
   },
   "autoload": {
     "psr-4": {

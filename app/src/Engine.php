@@ -1,28 +1,24 @@
 <?php
 
+
 namespace Project;
 
-/**
- * The AppNamespace namespace should be changed to whatever fit your project
- *
- * Many modern IDEs offer powerful refactoring features that should make this
- * renaming operation painless
- */
 
-use ObjectivePHP\Cli\Application\AbstractCliApplication;
+use ObjectivePHP\Application\AbstractEngine;
+use ObjectivePHP\Application\Filter\EnvFilter;
+use ObjectivePHP\DebuggingTools\DebuggingToolsPackage;
 use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlActionPackage;
 use ObjectivePHP\Router\RouterPackage;
+use Project\Injector\UtilsInjector;
 use Project\Package\Example\ExamplePackage;
 
-/**
- * Class CliApplication
- *
- * @package Project
- */
-class CliApplication extends AbstractCliApplication
+class Engine extends AbstractEngine
 {
     public function init()
     {
+        // register debugging tools
+        $this->registerPackage(new DebuggingToolsPackage($this));
+
         // register Phtml action package
         $this->registerPackage(new PhtmlActionPackage());
 
@@ -31,5 +27,9 @@ class CliApplication extends AbstractCliApplication
 
         // register local example package
         $this->registerPackage(new ExamplePackage());
+
+        // register dependency injector
+        $this->getServicesFactory()->registerInjector(new UtilsInjector());
     }
+
 }

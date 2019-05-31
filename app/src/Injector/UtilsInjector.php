@@ -22,6 +22,7 @@ class UtilsInjector implements InjectorInterface
      * @param object $instance
      * @param ServicesFactory $servicesFactory
      * @param ServiceSpecificationInterface|null $serviceSpecification
+     * @throws \ObjectivePHP\ServicesFactory\Exception\ServicesFactoryException
      */
     public function injectDependencies(
         $instance,
