@@ -3,5 +3,6 @@
     "utils.example-helper": {
       "class": "Project\\Utils\\ExampleHelper"
     }
-  }
+  },
+  "example.param": "from app config"
 }

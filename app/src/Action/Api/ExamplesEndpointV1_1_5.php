@@ -2,7 +2,7 @@
 
 namespace Project\Action\Api;
 
-use ObjectivePHP\Middleware\Action\RestAction\AbstractEndpoint;
+use ObjectivePHP\RestAction\AbstractEndpoint;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**

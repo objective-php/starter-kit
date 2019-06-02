@@ -9,7 +9,7 @@
 namespace Project\Action;
 
 
-use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlAction;
+use ObjectivePHP\PhtmlAction\PhtmlAction;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;

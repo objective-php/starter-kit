@@ -1,6 +1,8 @@
 <main class="container">
-<h2>Example action from a package</h2>
+    <h2>Example action from a package</h2>
 
-<p>Display here variables returned by the related action: <strong>$this->get('action.var') ==
-        <i><?= $this->get('action.var') ?></i></strong></p>
+    <p>Display here variables returned by the related action: <strong>$this->get('action.var') ==
+            <i><?= $this->get('action.var') ?></i></strong></p>
+
+    <?= \ObjectivePHP\Html\Tag\Tag::div(\ObjectivePHP\Html\Tag\Tag::strong('example.param config value: ' . $this->get('from.config'))) ?>
 </main>

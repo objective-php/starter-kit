@@ -2,15 +2,15 @@
 
 namespace Project\Action\Api;
 
-use ObjectivePHP\Middleware\Action\RestAction\AbstractRestAction;
-use ObjectivePHP\Middleware\Action\RestAction\Serializer\JsonSerializer;
+use ObjectivePHP\RestAction\AbstractRestAction;
+use ObjectivePHP\RestAction\Serializer\JsonSerializer;
 
 /**
  * Class Entity
  *
  * @package Project\Action\Api
  */
-class Examples extends AbstractRestAction
+class Example extends AbstractRestAction
 {
     public function __construct()
     {

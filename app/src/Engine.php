@@ -5,9 +5,8 @@ namespace Project;
 
 
 use ObjectivePHP\Application\AbstractEngine;
-use ObjectivePHP\Application\Filter\EnvFilter;
-use ObjectivePHP\DebuggingTools\DebuggingToolsPackage;
-use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlActionPackage;
+use ObjectivePHP\DevTools\DevToolsPackage;
+use ObjectivePHP\PhtmlAction\PhtmlActionPackage;
 use ObjectivePHP\Router\RouterPackage;
 use Project\Injector\UtilsInjector;
 use Project\Package\Example\ExamplePackage;
@@ -17,7 +16,7 @@ class Engine extends AbstractEngine
     public function init()
     {
         // register debugging tools
-        $this->registerPackage(new DebuggingToolsPackage($this));
+        $this->registerPackage(new DevtoolsPackage($this));
 
         // register Phtml action package
         $this->registerPackage(new PhtmlActionPackage());

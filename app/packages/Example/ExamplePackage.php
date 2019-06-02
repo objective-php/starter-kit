@@ -3,6 +3,7 @@
 namespace Project\Package\Example;
 
 use ObjectivePHP\Application\Package\AbstractPackage;
+use ObjectivePHP\Config\Directive\AbstractScalarDirective;
 
 /**
  * Class ExamplePackage
@@ -13,4 +14,14 @@ use ObjectivePHP\Application\Package\AbstractPackage;
  */
 class ExamplePackage extends AbstractPackage
 {
+    public function getDirectives(): array
+    {
+        return [
+            new class extends AbstractScalarDirective
+            {
+                const KEY = 'example.param';
+            }
+        ];
+    }
+
 }

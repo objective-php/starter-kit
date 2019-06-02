@@ -16,14 +16,13 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
-    "objective-php/application": "^2.0",
-    "objective-php/phtml-action": "^2.0",
-    "objective-php/rest-action": "^2.0",
-    "objective-php/services-factory": "^2.0",
-    "objective-php/cli": "^2.0.0-beta",
+    "php": ">=7.3",
+    "objective-php/application": "^3.0",
+    "objective-php/cli": "^3.0.0",
     "symfony/var-dumper": "^4.3",
-    "objective-php/debugging-tools": "dev-master"
+    "objective-php/devtools": "dev-master",
+    "objective-php/rest-action": "^3.0",
+    "objective-php/phtml-action": "^3.0.1"
   },
   "autoload": {
     "psr-4": {

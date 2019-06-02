@@ -10,9 +10,6 @@ namespace Project;
  */
 
 use ObjectivePHP\Cli\Application\AbstractCliApplication;
-use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlActionPackage;
-use ObjectivePHP\Router\RouterPackage;
-use Project\Package\Example\ExamplePackage;
 
 /**
  * Class CliApplication
@@ -23,13 +20,5 @@ class CliApplication extends AbstractCliApplication
 {
     public function init()
     {
-        // register Phtml action package
-        $this->registerPackage(new PhtmlActionPackage());
-
-        // register default router package
-        $this->registerPackage(new RouterPackage());
-
-        // register local example package
-        $this->registerPackage(new ExamplePackage());
     }
 }

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efaf9e9bddea17a159839b0e72b1f253",
+    "content-hash": "66f17860457b5db8d3e3146d1117bd90",
     "packages": [
         {
             "name": "aura/accept",
@@ -494,34 +494,34 @@
         },
         {
             "name": "objective-php/application",
-            "version": "v2.2.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/application.git",
-                "reference": "60305c364548befd56ca47d5a151745be2d93952"
+                "reference": "82b05bca3fe92552c386d7842e34746199c05320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/application/zipball/60305c364548befd56ca47d5a151745be2d93952",
-                "reference": "60305c364548befd56ca47d5a151745be2d93952",
+                "url": "https://api.github.com/repos/objective-php/application/zipball/82b05bca3fe92552c386d7842e34746199c05320",
+                "reference": "82b05bca3fe92552c386d7842e34746199c05320",
                 "shasum": ""
             },
             "require": {
-                "objective-php/config": "^2.0.0",
+                "objective-php/config": "^3.0.0",
                 "objective-php/events-handler": "^2.0.0",
                 "objective-php/filter": "^1.0.0",
                 "objective-php/matcher": "^1.0.0",
                 "objective-php/notification": "^1.0.0",
                 "objective-php/primitives": "^1.3.0",
-                "objective-php/router": "^2.0.0",
-                "objective-php/services-factory": "^2.1.0",
-                "php": ">=7.1",
+                "objective-php/router": "^3.0.0",
+                "objective-php/services-factory": "^3.0.1",
+                "php": ">=7.3",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0",
                 "zendframework/zend-diactoros": "^1.7"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.0"
+                "codeception/codeception": "^3.0"
             },
             "type": "framework",
             "autoload": {
@@ -546,28 +546,28 @@
                 "framework",
                 "objective php"
             ],
-            "time": "2019-05-30T16:14:32+00:00"
+            "time": "2019-06-01T09:13:26+00:00"
         },
         {
             "name": "objective-php/cli",
-            "version": "V2.0.0-BETA1",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/cli.git",
-                "reference": "7f6f825ef01f801921dd58f6d60de269c8c9c3cf"
+                "reference": "f97c90967d21590b28197f98396449488662198a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/cli/zipball/7f6f825ef01f801921dd58f6d60de269c8c9c3cf",
-                "reference": "7f6f825ef01f801921dd58f6d60de269c8c9c3cf",
+                "url": "https://api.github.com/repos/objective-php/cli/zipball/f97c90967d21590b28197f98396449488662198a",
+                "reference": "f97c90967d21590b28197f98396449488662198a",
                 "shasum": ""
             },
             "require": {
-                "league/climate": "^3.2",
-                "objective-php/application": "^2.0.2"
+                "league/climate": "^3.5.0"
             },
             "require-dev": {
-                "codeception/codeception": "^2.4"
+                "codeception/codeception": "^3.0.0",
+                "objective-php/application": "^3.0.0"
             },
             "bin": [
                 "bin/op"
@@ -593,20 +593,20 @@
                 "cli",
                 "objective php"
             ],
-            "time": "2018-05-24T13:03:20+00:00"
+            "time": "2019-06-01T10:15:51+00:00"
         },
         {
             "name": "objective-php/config",
-            "version": "v2.1.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/config.git",
-                "reference": "b53cbcaf0aea2b12c416b9ff1fba2d508d72f711"
+                "reference": "6cc9e85140f8f771a7d583c0e121be23aed5acbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/config/zipball/b53cbcaf0aea2b12c416b9ff1fba2d508d72f711",
-                "reference": "b53cbcaf0aea2b12c416b9ff1fba2d508d72f711",
+                "url": "https://api.github.com/repos/objective-php/config/zipball/6cc9e85140f8f771a7d583c0e121be23aed5acbf",
+                "reference": "6cc9e85140f8f771a7d583c0e121be23aed5acbf",
                 "shasum": ""
             },
             "require": {
@@ -640,20 +640,20 @@
                 "config",
                 "objective-php"
             ],
-            "time": "2019-05-30T12:01:24+00:00"
+            "time": "2019-05-31T07:39:41+00:00"
         },
         {
-            "name": "objective-php/debugging-tools",
+            "name": "objective-php/devtools",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/objective-php/debugging-tools.git",
-                "reference": "46a5ef18cbbe8ab24dc3c46e9717663279c40b22"
+                "url": "https://github.com/objective-php/devtools.git",
+                "reference": "168dc3ed49e0abc317fffe1088cb9b8df2cb319d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/debugging-tools/zipball/46a5ef18cbbe8ab24dc3c46e9717663279c40b22",
-                "reference": "46a5ef18cbbe8ab24dc3c46e9717663279c40b22",
+                "url": "https://api.github.com/repos/objective-php/devtools/zipball/168dc3ed49e0abc317fffe1088cb9b8df2cb319d",
+                "reference": "168dc3ed49e0abc317fffe1088cb9b8df2cb319d",
                 "shasum": ""
             },
             "require": {
@@ -668,7 +668,7 @@
             "type": "package",
             "autoload": {
                 "psr-4": {
-                    "ObjectivePHP\\DebuggingTools\\": "src/"
+                    "ObjectivePHP\\DevTools\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -682,27 +682,27 @@
                     "role": "lead"
                 }
             ],
-            "description": "Routing mechanism for Objective PHP",
-            "homepage": "https://github.com/objective-php/debugging-tools",
+            "description": "Various extensiosn to ease development",
+            "homepage": "https://github.com/objective-php/devtools",
             "keywords": [
                 "debug bar",
                 "debugging",
                 "objective php"
             ],
-            "time": "2019-05-30T16:22:49+00:00"
+            "time": "2019-05-31T12:51:01+00:00"
         },
         {
             "name": "objective-php/docu-mentor",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/docu-mentor.git",
-                "reference": "cd42fb04c6790c77618931f700acd1ffe441bc34"
+                "reference": "243fc7e76ab0cc9c7567e0bd3699adca95a96200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/docu-mentor/zipball/cd42fb04c6790c77618931f700acd1ffe441bc34",
-                "reference": "cd42fb04c6790c77618931f700acd1ffe441bc34",
+                "url": "https://api.github.com/repos/objective-php/docu-mentor/zipball/243fc7e76ab0cc9c7567e0bd3699adca95a96200",
+                "reference": "243fc7e76ab0cc9c7567e0bd3699adca95a96200",
                 "shasum": ""
             },
             "require": {
@@ -740,7 +740,7 @@
                 "markdown",
                 "objective php"
             ],
-            "time": "2018-06-26T14:56:39+00:00"
+            "time": "2019-06-02T15:12:18+00:00"
         },
         {
             "name": "objective-php/events-handler",
@@ -887,20 +887,20 @@
         },
         {
             "name": "objective-php/http-action",
-            "version": "v1.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/http-action.git",
-                "reference": "845fe0617d12ceca7864c45d973dd811996a710d"
+                "reference": "d5f956203b4aec4d081674d3a602a7768bbe35b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/http-action/zipball/845fe0617d12ceca7864c45d973dd811996a710d",
-                "reference": "845fe0617d12ceca7864c45d973dd811996a710d",
+                "url": "https://api.github.com/repos/objective-php/http-action/zipball/d5f956203b4aec4d081674d3a602a7768bbe35b6",
+                "reference": "d5f956203b4aec4d081674d3a602a7768bbe35b6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0",
+                "php": ">=7.3",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0",
                 "zendframework/zend-diactoros": "^1.7"
@@ -908,7 +908,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ObjectivePHP\\Middleware\\HttpAction\\": "src/"
+                    "ObjectivePHP\\HttpAction\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -928,28 +928,27 @@
                 "objective php",
                 "psr-15"
             ],
-            "time": "2018-03-14T08:20:22+00:00"
+            "time": "2019-06-01T10:30:24+00:00"
         },
         {
             "name": "objective-php/matcher",
-            "version": "v1.0.2",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/matcher.git",
-                "reference": "b7b1339b7388971760b118dd109316a0a9691591"
+                "reference": "c72e3fe027e96c7f0c6d1ab83ebbb8ea9ec9b184"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/matcher/zipball/b7b1339b7388971760b118dd109316a0a9691591",
-                "reference": "b7b1339b7388971760b118dd109316a0a9691591",
+                "url": "https://api.github.com/repos/objective-php/matcher/zipball/c72e3fe027e96c7f0c6d1ab83ebbb8ea9ec9b184",
+                "reference": "c72e3fe027e96c7f0c6d1ab83ebbb8ea9ec9b184",
                 "shasum": ""
             },
             "require": {
-                "objective-php/phpunit-extension": "~1.0",
-                "php": ">=7.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.*"
+                "codeception/codeception": "^3.0"
             },
             "type": "library",
             "autoload": {
@@ -974,7 +973,7 @@
                 "matcher",
                 "objective php"
             ],
-            "time": "2018-01-08T15:44:02+00:00"
+            "time": "2019-05-31T15:18:44+00:00"
         },
         {
             "name": "objective-php/notification",
@@ -1030,79 +1029,34 @@
             "time": "2017-04-26T16:31:48+00:00"
         },
         {
-            "name": "objective-php/phpunit-extension",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/objective-php/phpunit-extension.git",
-                "reference": "1b3e2b516585e828a947248d571b3f966b768e0f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/phpunit-extension/zipball/1b3e2b516585e828a947248d571b3f966b768e0f",
-                "reference": "1b3e2b516585e828a947248d571b3f966b768e0f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "5.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ObjectivePHP\\PHPUnit\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Gauthier 'Rusty' Delamarre",
-                    "email": "gauthier@objective-php.org",
-                    "role": "lead"
-                }
-            ],
-            "description": "Some add-ons for PHPUnit Unit Test Framework",
-            "homepage": "https://github.com/objective-php/phpunit-extension",
-            "keywords": [
-                "objective php",
-                "phpunit"
-            ],
-            "time": "2016-05-05T12:55:53+00:00"
-        },
-        {
             "name": "objective-php/phtml-action",
-            "version": "v2.0.2",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/phtml-action.git",
-                "reference": "8edad6a3c4a9318ccd6226972e4a00479ab78c08"
+                "reference": "39cfeda8e205580c94a42bed6b9f3fb83eed13ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/phtml-action/zipball/8edad6a3c4a9318ccd6226972e4a00479ab78c08",
-                "reference": "8edad6a3c4a9318ccd6226972e4a00479ab78c08",
+                "url": "https://api.github.com/repos/objective-php/phtml-action/zipball/39cfeda8e205580c94a42bed6b9f3fb83eed13ba",
+                "reference": "39cfeda8e205580c94a42bed6b9f3fb83eed13ba",
                 "shasum": ""
             },
             "require": {
-                "objective-php/application": "^2.0.0",
+                "objective-php/application": "^3.0.0",
                 "objective-php/html": "^1.0",
-                "objective-php/http-action": "^1.0",
+                "objective-php/http-action": "^3.0",
                 "objective-php/primitives": "^1.3",
-                "objective-php/services-factory": "^2.0.0",
-                "php": "^7.0"
+                "objective-php/services-factory": "^3.0.0",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "codeception/codeception": "^2.4"
+                "codeception/codeception": "^3.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ObjectivePHP\\Middleware\\Action\\PhtmlAction\\": "src/"
+                    "ObjectivePHP\\PhtmlAction\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1125,7 +1079,7 @@
                 "psr-15",
                 "view"
             ],
-            "time": "2018-06-24T11:13:59+00:00"
+            "time": "2019-06-01T12:48:06+00:00"
         },
         {
             "name": "objective-php/primitives",
@@ -1183,32 +1137,32 @@
         },
         {
             "name": "objective-php/rest-action",
-            "version": "v2.0.0",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/rest-action.git",
-                "reference": "39ea126d2f3078d524d0ad347854c470d279ad7e"
+                "reference": "92dee0534eca76b62c14f893366537df77a89d66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/rest-action/zipball/39ea126d2f3078d524d0ad347854c470d279ad7e",
-                "reference": "39ea126d2f3078d524d0ad347854c470d279ad7e",
+                "url": "https://api.github.com/repos/objective-php/rest-action/zipball/92dee0534eca76b62c14f893366537df77a89d66",
+                "reference": "92dee0534eca76b62c14f893366537df77a89d66",
                 "shasum": ""
             },
             "require": {
                 "aura/accept": "^2.2",
                 "composer/semver": "^1.4",
-                "objective-php/http-action": "^1.0",
-                "objective-php/services-factory": "^2.0",
-                "php": "~7.0"
+                "objective-php/http-action": "^3.0",
+                "objective-php/services-factory": "^3.0",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "codeception/codeception": "^2.4"
+                "codeception/codeception": "^3.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ObjectivePHP\\Middleware\\Action\\RestAction\\": "src/"
+                    "ObjectivePHP\\RestAction\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1229,32 +1183,31 @@
                 "psr-15",
                 "rest"
             ],
-            "time": "2018-05-24T13:14:11+00:00"
+            "time": "2019-06-01T12:14:11+00:00"
         },
         {
             "name": "objective-php/router",
-            "version": "v2.0.2",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/router.git",
-                "reference": "e8e6e911b24d9395cf1f00e58505a692ab22aef1"
+                "reference": "9dbc423c83d05906e78d3f25ad32b8d316a4ce66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/router/zipball/e8e6e911b24d9395cf1f00e58505a692ab22aef1",
-                "reference": "e8e6e911b24d9395cf1f00e58505a692ab22aef1",
+                "url": "https://api.github.com/repos/objective-php/router/zipball/9dbc423c83d05906e78d3f25ad32b8d316a4ce66",
+                "reference": "9dbc423c83d05906e78d3f25ad32b8d316a4ce66",
                 "shasum": ""
             },
             "require": {
                 "objective-php/primitives": "^1.3",
-                "php": ">=7.0",
+                "php": ">=7.3",
                 "psr/http-server-handler": "^1.0",
                 "psr/http-server-middleware": "^1.0"
             },
             "require-dev": {
-                "codeception/codeception": "^2.4",
-                "objective-php/config": "^2.0.2",
-                "objective-php/services-factory": "^2.0.1"
+                "codeception/codeception": "^3.0",
+                "objective-php/application": "^3.0.0"
             },
             "type": "library",
             "autoload": {
@@ -1279,34 +1232,34 @@
                 "objective php",
                 "router"
             ],
-            "time": "2018-06-07T08:58:20+00:00"
+            "time": "2019-06-01T09:10:01+00:00"
         },
         {
             "name": "objective-php/services-factory",
-            "version": "v2.1.1",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/objective-php/services-factory.git",
-                "reference": "1749b2dff6044abede9a12617f94cf69228d7695"
+                "reference": "d4f816ea407ed9c40425a500d351aba85bc40a7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/1749b2dff6044abede9a12617f94cf69228d7695",
-                "reference": "1749b2dff6044abede9a12617f94cf69228d7695",
+                "url": "https://api.github.com/repos/objective-php/services-factory/zipball/d4f816ea407ed9c40425a500d351aba85bc40a7c",
+                "reference": "d4f816ea407ed9c40425a500d351aba85bc40a7c",
                 "shasum": ""
             },
             "require": {
                 "container-interop/container-interop": "^1.1",
                 "doctrine/annotations": "~1.4.0",
-                "objective-php/config": "^2.0",
+                "objective-php/config": "^3.0.0",
                 "objective-php/docu-mentor": "^1.0",
-                "objective-php/matcher": "~1.0.0",
-                "objective-php/primitives": "~1.3.0",
-                "php": ">=7.1",
+                "objective-php/matcher": "^1.0.0",
+                "objective-php/primitives": "^1.3.0",
+                "php": ">=7.3",
                 "phpdocumentor/reflection-docblock": "^4.3"
             },
             "require-dev": {
-                "codeception/codeception": "^2.4",
+                "codeception/codeception": "^3.0",
                 "zendframework/zend-servicemanager": "^2.7.6"
             },
             "type": "library",
@@ -1333,7 +1286,7 @@
                 "objective php",
                 "services"
             ],
-            "time": "2019-05-26T20:53:11+00:00"
+            "time": "2019-05-31T15:08:07+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2204,13 +2157,12 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "objective-php/cli": 10,
-        "objective-php/debugging-tools": 20
+        "objective-php/devtools": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.3"
     },
     "platform-dev": []
 }

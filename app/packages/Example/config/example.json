@@ -1,5 +1,6 @@
 {
   "router.action-namespace": {
     "package.example": "Project\\Package\\Example\\Action\\"
-  }
+  },
+  "example.param": "value"
 }

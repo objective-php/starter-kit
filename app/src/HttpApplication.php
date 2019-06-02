@@ -10,11 +10,7 @@ namespace Project;
  */
 
 use ObjectivePHP\Application\AbstractHttpApplication;
-use ObjectivePHP\Middleware\Action\PhtmlAction\ExceptionHandler\DefaultExceptionRenderer;
-use ObjectivePHP\Middleware\Action\PhtmlAction\PhtmlActionPackage;
-use ObjectivePHP\Router\RouterPackage;
-use Project\Injector\UtilsInjector;
-use Project\Package\Example\ExamplePackage;
+use ObjectivePHP\PhtmlAction\ExceptionHandler\DefaultExceptionRenderer;
 
 /**
  * Class Application

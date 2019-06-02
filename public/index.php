@@ -1,8 +1,8 @@
 <?php
 
+use Project\CliApplication;
 use Project\Engine;
 use Project\HttpApplication;
-use Project\CliApplication;
 
 $autoloader = require dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -13,16 +13,7 @@ if ($env == 'dev') {
     ini_set('display_errors', 1);
 }
 
-try {
-    $engine = new Engine($env, $autoloader);
-    $engine->registerHttpApplication(HttpApplication::class);
-    $engine->registerCliApplication(CliApplication::class);
-    $engine->run();
-} catch (Throwable $e) {
-
-
-    if ($env == 'dev') {
-        ob_end_clean();
-        throw $e;
-    }
-}
+$engine = new Engine($env, $autoloader);
+$engine->registerHttpApplication(HttpApplication::class);
+$engine->registerCliApplication(CliApplication::class);
+$engine->run();
