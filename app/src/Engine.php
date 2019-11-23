@@ -16,7 +16,7 @@ class Engine extends AbstractEngine
     public function init()
     {
         // register debugging tools
-        $this->registerPackage(new DevtoolsPackage($this));
+        //$this->registerPackage(new DevtoolsPackage($this));
 
         // register Phtml action package
         $this->registerPackage(new PhtmlActionPackage());
