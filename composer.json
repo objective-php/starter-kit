@@ -18,7 +18,6 @@
   "require": {
     "php": ">=7.3",
     "objective-php/application": "^3.0",
-    "objective-php/cli": "^3.0.0",
     "symfony/var-dumper": "^4.3",
     "objective-php/devtools": "dev-master",
     "objective-php/rest-action": "^3.0",
