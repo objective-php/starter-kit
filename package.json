@@ -13,7 +13,7 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "v4.0.0-beta.0",
     "jquery": "^3.4.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",
     "sass-loader": "^6.0.6",
